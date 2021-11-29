@@ -1,0 +1,63 @@
+/*Formulario*/ /*paginaa formulariioOOOOOOO*/
+.form__fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__titulo {
+    color: #f6f6f6;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+    border-bottom: 3px solid $rojo--claro;
+    width: 30rem;
+}
+.contenedor {
+    display: inline-block;
+}
+.conten {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+} 
+.conten__name {
+    color: #f6f6f6;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.conten__input {
+    background-color: $azul--oscuro;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-family: 'Montserrat';
+    border: 1px solid $azul--btn;
+    color: $blanco--opaco;
+}
+.conten__input--18 {
+    margin: 0 1rem;
+}
+.conten__input--area {
+    height: 22rem;
+    width: 100%;
+}
+.form__botones {
+    margin: 3.5rem 0;
+    display: flex;
+    flex-direction: row;
+}
+.botoform {
+    margin: 0 1rem;
+}
+.btn_enviar {
+    @include boton(4px, $azul--btn);
+    width: 15.35rem;
+    height: 5rem;
+    padding: 2px 0;
+}
+.btn_enviar:hover {
+    background-color: $azul--btn;
+    color: $blanco;
+}

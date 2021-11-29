@@ -1,0 +1,87 @@
+/* Header  ======0000======000==== PAGINA NOSOTROOOSSSS*/
+.blog-titulo {
+    text-align: center;
+    font-size: 8rem;
+    color: $blanco--opaco;
+    font-weight: 600;
+}
+.yo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 13%;
+}
+.yo-avt--fondo {
+    background-color: $blanco--opaco;
+    border-radius: 33px;
+    width: 30.5rem;
+    height: 30.5rem;
+    margin-right: 1.5rem;
+}
+.yo-avt {
+    width: 100%;
+}
+.yo-descrip {
+    background-color: $blanco--opaco;
+    width: 49.5rem;
+    border-radius: 33px;
+}
+.yo-titulo {
+    width: 100%;
+    padding: 4% 0 0 5%;
+}
+.yo-texto {
+    color: $azul--oscuro;
+    margin: 1rem;
+}
+@media screen and (max-width: 800px) {
+    .yo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 13%;
+    }
+    .yo-descrip {
+        width: 30.5rem;
+        margin-top: 5rem;
+    }
+}
+.personajes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "susana" "maria" "bruno";
+    margin-top: 8rem;
+    background-color: $blanco--opaco;
+    justify-items: center;
+    padding: 1.5rem 0;
+}
+@media screen and (max-width: 800px) {
+    .personajes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.personajes_1 {
+    grid-area: susana;
+}
+.personajes_2 {
+    grid-area: maria;
+}
+.personajes-3 {
+    grid-area: bruno;
+}
+.espacio {
+    display: flex;
+    justify-content: center;
+}
+.espacio--avt {
+    width: 19rem;
+    height: 21.5rem;
+}
+.nombre {
+    font-weight: 700;
+}
+.descrip {
+    color: $azul--oscuro;
+    margin: 2rem;
+    font-weight: 600;
+}

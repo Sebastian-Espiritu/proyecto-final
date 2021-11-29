@@ -1,0 +1,82 @@
+/*HEADER 2*/  /*pagina SERVICIOSS*/
+.encabezado_servicio {
+    background-image: url(../img/fondo-de-imagen-3.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: #238fb7 solid 0.9rem
+}
+.encabezado_servicio h1 {
+    color: #f6f6f6;
+    font-weight: 700;
+    font-size: 8.5rem;
+    width: 67.3rem;
+    text-align: center;
+    margin-top: 9rem;
+}
+.encabezado_servicio p{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #f6f6f6;
+    width: 85rem;
+    text-align: center;
+    margin-top: 4.5rem;
+    word-spacing: 0.8rem;
+}
+.botones_blue {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    width: 36%;
+}
+.btn_blue {
+    @include boton(4px, $azul--principal);
+    padding: 1.3rem 1rem;
+}   
+.btn_blue:hover {
+    background-color: $azul--principal;
+    color: $blanco--opaco;
+}   
+/*LOS Services*/
+.main_services {
+    background-color: #F6F6F6;
+    height: 29.6rem;
+}
+.main_services p {
+    color: #000;
+    font-size: 1.7rem;
+}
+.services {
+    display: grid;
+    grid-template-rows: 29.6rem 20.35rem 29.6rem 20rem;
+    align-items: center;
+    grid-template-areas:'sec_dise'
+                        'art_dise'
+                        'sec_desa'
+                        'art_desa';
+}
+.sec_dise {
+    grid-area: sec_dise;
+}
+.sec_desa {
+    grid-area: sec_desa;
+}
+.art_dise {
+    grid-area: art_dise;
+}
+.art_desa {
+    grid-area: art_desa;
+}
+.articles h3{
+    color: #f6f6f6;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.articles p{
+    font-size: 1.7rem;
+    text-align: center;
+}

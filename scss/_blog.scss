@@ -1,0 +1,25 @@
+/*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
+.encabezado--blog {
+    background-image: url(../img/fondo-blog.jpg);
+    height: 42rem;
+    align-items: center;
+}
+.fondo__color--blog {
+    height: 42rem;
+    background-color: rgba( 0, 0, 0, .6);
+    border-bottom: $azul--principal solid 0.9rem
+}
+.encabezado__titulo--blog {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 6.7rem;
+    font-size: 8rem;
+}
+.blog__cabezado--text {
+    line-height: 1.3;
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 6.5rem 7.5rem 0 7.5rem;
+    text-align: start;
+}
