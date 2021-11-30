@@ -1,16 +1,19 @@
 /*HEADER 2*/  /*pagina SERVICIOSS*/
-.encabezado_servicio {
+.encabezado--servicio {
     background-image: url(../img/fondo-services.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     height: 60rem;
+}
+.fondo__color--servicio {
+    border-bottom: #238fb7 solid 0.9rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: #238fb7 solid 0.9rem
 }
-.encabezado_servicio h1 {
+.encabezado--servicio h1 {
     color: #f6f6f6;
     font-weight: 700;
     font-size: 8.5rem;
@@ -18,7 +21,7 @@
     text-align: center;
     margin-top: 9rem;
 }
-.encabezado_servicio p{
+.encabezado--servicio p{
     font-size: 2.3rem;
     font-weight: 700;
     color: #f6f6f6;

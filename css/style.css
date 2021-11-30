@@ -110,7 +110,9 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .cont_blog { display: flex; flex-direction: column; margin-left: 30px; width: 34rem; }
 
-.cont_blog--img { width: 100%; }
+.cont_blog--img { width: 100%; transition: all 300ms; }
+
+.cont_blog--img:hover { transform: scale(1.09); }
 
 /*SECCION DE Contacto*/
 .contacto h2 { color: #f6f6f6; padding-bottom: 0.5rem; border-bottom: 2px solid #FF0000; }
@@ -161,11 +163,13 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 /*HEADER 2*/
 /*pagina SERVICIOSS*/
-.encabezado_servicio { background-image: url(../img/fondo-de-imagen-3.jpg); background-position: right; background-repeat: no-repeat; background-size: cover; height: 60rem; display: flex; flex-direction: column; align-items: center; border-bottom: #238fb7 solid 0.9rem; }
+.encabezado--servicio { background-image: url(../img/fondo-services.png); background-position: right; background-repeat: no-repeat; background-size: cover; height: 60rem; }
 
-.encabezado_servicio h1 { color: #f6f6f6; font-weight: 700; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
+.fondo__color--servicio { border-bottom: #238fb7 solid 0.9rem; height: 60rem; display: flex; flex-direction: column; align-items: center; }
 
-.encabezado_servicio p { font-size: 2.3rem; font-weight: 700; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
+.encabezado--servicio h1 { color: #f6f6f6; font-weight: 700; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
+
+.encabezado--servicio p { font-size: 2.3rem; font-weight: 700; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
 
 .botones_blue { display: flex; justify-content: space-between; margin-top: 6rem; width: 36%; }
 

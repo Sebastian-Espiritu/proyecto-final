@@ -325,6 +325,10 @@ a.boton_blue {
 }
 .cont_blog--img {
     width: 100%;
+    transition: all 300ms;
+}
+.cont_blog--img:hover {
+    transform: scale(1.09);
 }
 /*SECCION DE Contacto*/
 .contacto h2 {
