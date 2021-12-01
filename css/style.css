@@ -38,6 +38,8 @@ p { color: #ffffff; }
 
 .btn_contac { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 3px solid #cc1010; font-size: 1.8rem; font-weight: 600; transition: background-color .5s, border .5s, color .5s; background-color: #CC1010; width: 12rem; height: 3.7rem; margin-left: 1.5rem; cursor: pointer; }
 
+@media screen and (max-width: 576px) { .btn_contac { margin-top: 0.5rem; } }
+
 .btn_contac:hover { background-color: #FF0000; border: 4px solid #FF0000; color: #ffffff; }
 
 .nav__logo { display: flex; justify-content: center; align-items: flex-start; margin: 0.8rem 0 0.8rem 1.7rem; }
@@ -84,7 +86,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 /*Mis Servicios=============000=======================0000000======*/
 .main__titulo { color: #f6f6f6; text-align: center; }
 
-.main { display: flex; flex-direction: column; align-items: center; }
+.main { display: flex; flex-direction: column; align-items: center; margin-top: 4rem; }
 
 .servicio { background-color: #fff; display: flex; flex-direction: column; align-items: center; width: 34rem; margin: 2rem 5rem; border-radius: 40px; padding: 1rem 2rem; }
 
@@ -103,23 +105,29 @@ a.boton_blue { border-bottom-color: #238fb7; }
 @media screen and (min-width: 783px) { .servicios { display: grid; grid-template-columns: repeat(2, 50%); justify-items: center; }
   .servicio { width: 32rem; margin: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center; } }
 
-/*SECCION de blog  ========= ================ ==============*/
+/*SECCION de blog  ========= =========0000000000000======= ==============*/
 .sec_blog { background-color: #ffffff; padding: 2rem; margin-top: 4rem; }
 
-.sec_blog--titulo { color: #001219; text-align: center; }
+.sec_blog--titulo { color: #001219; text-align: center; margin-bottom: 1rem; }
 
-.cont_blog { background-color: #f6f6f6; display: inline-flex; flex-direction: column; margin-left: 30px; width: 34rem; transition: all 300ms; border: 2px solid #000; border-radius: 18px; cursor: pointer; }
+.cont_blog { background-color: #f6f6f6; display: inline-flex; flex-direction: column; margin-left: 30px; width: 34rem; transition: all 300ms; border: 1px solid #464646; border-radius: 18px; cursor: pointer; height: 23rem; }
 
 .cont_blog:hover { transform: scale(1.09); }
 
 .cont_blog--img { width: 100%; border-top-left-radius: 18px; border-top-right-radius: 18px; }
 
-.cont_blog--btn { text-decoration: none; width: 11.5rem; height: 2.4rem; font-weight: 600; display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 0px solid #cc1010; background-color: #000; font-size: 1.3rem; }
+.cont_blog--btn { text-decoration: none; width: 11.5rem; height: 2.4rem; font-weight: 600; display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 0px solid #cc1010; background-color: #238fb7; font-size: 1.3rem; margin: 0.75rem 0 0.7rem 3rem; }
+
+.cont_blog--btn:hover { color: #f6f6f6; }
+
+.cont_blog--titulo { display: inline-flex; margin-left: 3rem; font-weight: 700; font-size: 1.8rem; color: #001219; text-decoration: none; }
+
+.cont_blog--titulo:hover { color: #001219; text-decoration: underline; }
 
 /*SECCION DE Contacto*/
 .contacto h2 { color: #f6f6f6; padding-bottom: 0.5rem; border-bottom: 2px solid #FF0000; }
 
-.contacto { display: flex; flex-direction: column; align-items: center; }
+.contacto { display: flex; flex-direction: column; align-items: center; margin: 5rem 0 4rem 0; }
 
 /* =============== EL FINALLLL DE LAAA PAGINAAA INDEEEEXXX =========IABDIQA IUBAI8D AAAAAAAAAA AAAAAAAAAAAAA AAAAAAAA*/
 /*Footer*/

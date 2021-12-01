@@ -93,6 +93,11 @@ p {
     margin-left: 1.5rem;
     cursor: pointer;    
 }
+@media screen and (max-width: 576px) {
+    .btn_contac {
+        margin-top: 0.5rem;
+    }
+}
 .btn_contac:hover {
     background-color: $rojo--claro;
     border: 4px solid $rojo--claro;
@@ -236,6 +241,7 @@ a.boton_blue {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
 }
 .servicio {
     background-color: #fff;
@@ -307,7 +313,7 @@ a.boton_blue {
     }
 }
 
-/*SECCION de blog  ========= ================ ==============*/
+/*SECCION de blog  ========= =========0000000000000======= ==============*/
 .sec_blog {                     
     background-color: #ffffff;
     padding: 2rem;
@@ -316,6 +322,7 @@ a.boton_blue {
 .sec_blog--titulo {
     color: #001219;
     text-align: center;
+    margin-bottom: 1rem;
 }
 .cont_blog {
     background-color: $blanco--opaco;
@@ -324,9 +331,10 @@ a.boton_blue {
     margin-left: 30px;
     width: 34rem;
     transition: all 300ms;
-    border: 2px solid #000;
+    border: 1px solid $gris;
     border-radius: 18px;
     cursor: pointer; 
+    height: 23rem;
 }
 .cont_blog:hover {
     transform: scale(1.09);
@@ -342,8 +350,24 @@ a.boton_blue {
     height: 2.4rem;
     font-weight: 600;
     @include boton(0px, $rojo--opaco);
-    background-color: #000;
+    background-color: $azul--principal;
     font-size: 1.3rem;
+    margin: 0.75rem 0 0.7rem 3rem;
+}
+.cont_blog--btn:hover {
+    color: $blanco--opaco;
+}
+.cont_blog--titulo {
+    display: inline-flex;
+    margin-left: 3rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: $azul--oscuro;
+    text-decoration: none;
+}
+.cont_blog--titulo:hover {
+    color: $azul--oscuro;
+    text-decoration: underline ;
 }
 /*SECCION DE Contacto*/
 .contacto h2 {
@@ -355,6 +379,7 @@ a.boton_blue {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5rem 0 4rem 0;
 } /* =============== EL FINALLLL DE LAAA PAGINAAA INDEEEEXXX =========IABDIQA IUBAI8D AAAAAAAAAA AAAAAAAAAAAAA AAAAAAAA*/
 
 /*Footer*/
