@@ -318,17 +318,32 @@ a.boton_blue {
     text-align: center;
 }
 .cont_blog {
-    display: flex;
+    background-color: $blanco--opaco;
+    display: inline-flex;
     flex-direction: column;
     margin-left: 30px;
     width: 34rem;
+    transition: all 300ms;
+    border: 2px solid #000;
+    border-radius: 18px;
+    cursor: pointer; 
+}
+.cont_blog:hover {
+    transform: scale(1.09);
 }
 .cont_blog--img {
     width: 100%;
-    transition: all 300ms;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
 }
-.cont_blog--img:hover {
-    transform: scale(1.09);
+.cont_blog--btn {
+    text-decoration: none;
+    width: 11.5rem;
+    height: 2.4rem;
+    font-weight: 600;
+    @include boton(0px, $rojo--opaco);
+    background-color: #000;
+    font-size: 1.3rem;
 }
 /*SECCION DE Contacto*/
 .contacto h2 {
