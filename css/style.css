@@ -188,7 +188,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .btn_blue:hover { background-color: #238fb7; color: #f6f6f6; }
 
 /*LOS Services*/
-.main_services { background-color: #F6F6F6; height: 29.6rem; }
+.main_services { background-color: #F6F6F6; }
 
 .main_services p { color: #000; font-size: 1.7rem; }
 
