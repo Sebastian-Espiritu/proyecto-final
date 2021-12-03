@@ -192,7 +192,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .btn_blue:hover { background-color: #238fb7; color: #f6f6f6; }
 
 /*LOS Services ====000000000000000000000=============000000==========*/
-.services { display: grid; grid-template-rows: 38rem 25rem 35.5rem 20rem; align-items: center; grid-template-areas: 'sec_dise' 'art_dise' 'sec_desa' 'art_desa'; }
+.services { display: grid; grid-template-rows: 31.5rem 31rem 30rem 27rem; align-items: center; grid-template-areas: 'sec_dise' 'art_dise' 'sec_desa' 'art_desa'; }
 
 .sec_dise { grid-area: sec_dise; }
 
@@ -202,16 +202,20 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .art_desa { grid-area: art_desa; }
 
-.main_services { background-color: #f6f6f6; align-self: start; }
+.main_services { background-color: #f6f6f6; align-self: stretch; }
+
+.main_services__btn { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 2px solid #238fb7; background-color: #238fb7; padding: 0.9rem; font-size: 1.8rem; align-self: start; }
+
+.main_services__btn:hover { background-color: transparent; color: #001219; }
 
 .articles h3 { color: #f6f6f6; font-size: 2.2rem; text-align: center; }
 
 .articles p { font-size: 1.7rem; text-align: center; }
 
 /*Seccion Diseño*/
-.sec_dise { display: grid; grid-template-columns: 49.5% 3.5% 47%; grid-template-rows: 216px 80px; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "texto-dis n img-dis" "btn-dis n img-dis"; }
+.sec_dise { height: 100%; display: grid; grid-template-columns: 49.5% 3.5% 47%; grid-template-rows: 73% 27%; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "texto-dis n img-dis" "btn-dis n img-dis"; }
 
-.main_services__img { grid-area: img-dis; width: 87%; }
+.main_services__img-dise { grid-area: img-dis; width: 87%; }
 
 .cont-dise { grid-area: texto-dis; text-align: center; }
 
@@ -219,12 +223,19 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .main_services__texto { color: #000; line-height: 3rem; margin: 0; }
 
-.main_services__btn { grid-area: btn-dis; display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 2px solid #238fb7; background-color: #238fb7; padding: 0.9rem; font-size: 1.8rem; align-self: start; }
-
-.main_services__btn:hover { background-color: transparent; color: #001219; }
+.btn-dise { grid-area: btn-dis; }
 
 /*Seccion Desarrolloo*/
 .sec_desa { display: grid; grid-template-columns: 48% 5% 47%; grid-template-rows: 216px 80px; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "img-des n texto-des" "img-des n btn-des"; }
+
+.main_services__img-desa { grid-area: img-des; width: 87%; }
+
+.cont-desa { grid-area: texto-des; text-align: center; }
+
+.btn-desa { grid-area: btn-des; }
+
+/*Modif. footer*/
+.footer__texto--services { margin: 0 0 0.5px 0; font-size: 18.5px; }
 
 /*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
 .encabezado--blog { background-image: url(../img/fondo-blog.jpg); height: 42rem; align-items: center; }

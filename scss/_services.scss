@@ -47,7 +47,7 @@
 /*LOS Services ====000000000000000000000=============000000==========*/
 .services {
     display: grid;
-    grid-template-rows: 38rem 25rem 35.5rem 20rem;
+    grid-template-rows: 31.5rem 31rem 30rem 27rem;
     align-items: center;
     grid-template-areas:'sec_dise'
                         'art_dise'
@@ -68,7 +68,18 @@
 }
 .main_services {
     background-color: $blanco--opaco;  
+    align-self: stretch;
+}
+.main_services__btn {
+    @include boton(2px, $azul--principal);
+    background-color: $azul--principal;
+    padding: 0.9rem;
+    font-size: 1.8rem;
     align-self: start;
+}
+.main_services__btn:hover {
+    background-color: transparent;
+    color: $azul--oscuro;
 }
 .articles h3{
     color: $blanco--opaco;
@@ -81,16 +92,17 @@
 }
 /*Seccion Diseño*/
 .sec_dise {
+    height: 100%;
     display: grid;
     grid-template-columns: 49.5% 3.5% 47%;
-    grid-template-rows: 216px 80px;
+    grid-template-rows: 73% 27%;
     justify-items: center;
     align-items: center;
     margin: 0 11%;
     grid-template-areas: "texto-dis n img-dis"
                          "btn-dis n img-dis";
 }
-.main_services__img {
+.main_services__img-dise {
     grid-area: img-dis;
     width: 87%;
 }
@@ -107,17 +119,8 @@
     line-height: 3rem;
     margin: 0;
 }
-.main_services__btn {
+.btn-dise {
     grid-area: btn-dis;
-    @include boton(2px, $azul--principal);
-    background-color: $azul--principal;
-    padding: 0.9rem;
-    font-size: 1.8rem;
-    align-self: start;
-}
-.main_services__btn:hover {
-    background-color: transparent;
-    color: $azul--oscuro;
 }
 /*Seccion Desarrolloo*/
 .sec_desa {
@@ -129,4 +132,20 @@
     margin: 0 11%;
     grid-template-areas: "img-des n texto-des"
                          "img-des n btn-des";
+}
+.main_services__img-desa {
+    grid-area: img-des;
+    width: 87%;
+}
+.cont-desa {
+    grid-area: texto-des;
+    text-align: center;
+}
+.btn-desa {
+    grid-area: btn-des;
+}
+/*Modif. footer*/
+.footer__texto--services {
+    margin: 0 0 0.5px 0;
+    font-size: 18.5px;
 }
