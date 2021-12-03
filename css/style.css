@@ -1,5 +1,24 @@
 @charset "UTF-8";
 /* GENERALES */
+/*Utilidades*/
+.tm_28 { font-size: 2.8rem; }
+
+.tm_15 { font-size: 1.5rem; }
+
+.tm_20 { font-size: 2rem; }
+
+.tm_25 { font-size: 2.5rem; }
+
+.tm_30 { font-size: 3rem; }
+
+.tx_center { text-align: center; }
+
+.font_700 { font-weight: 700; }
+
+.font_600 { font-weight: 600; }
+
+.font_400 { font-weight: 400; }
+
 * { margin: 0; padding: 0; }
 
 *:after, *:before { box-sizing: border-box; }
@@ -11,21 +30,6 @@ html { box-sizing: border-box; /*Tuco Box Model*/ font-size: 10px; /*1rem = 10px
 body { background-color: #001219; font-family: "Montserrat", sans-serif; }
 
 p { color: #ffffff; }
-
-/*Utilidades*/
-.tm_28 { font-size: 2.8rem; }
-
-.tm_15 { font-size: 1.5rem; }
-
-.tm_20 { font-size: 2rem; }
-
-.tm_25 { font-size: 2.5rem; }
-
-.tx_center { text-align: center; }
-
-.font_700 { font-weight: 700; }
-
-.font_400 { font-weight: 400; }
 
 /* Navegacion =========== ===========  =========== */
 .nav { background-color: #001219; display: flex; }
@@ -177,9 +181,9 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .fondo__color--servicio { border-bottom: #238fb7 solid 0.9rem; height: 60rem; display: flex; flex-direction: column; align-items: center; }
 
-.encabezado--servicio h1 { color: #f6f6f6; font-weight: 700; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
+.encabezado-servicio__titulo { color: #f6f6f6; font-weight: 700; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
 
-.encabezado--servicio p { font-size: 2.3rem; font-weight: 700; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
+.encabezado-servicio__texto { font-size: 2.3rem; font-weight: 700; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
 
 .botones_blue { display: flex; justify-content: space-between; margin-top: 6rem; width: 36%; }
 
@@ -187,12 +191,8 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .btn_blue:hover { background-color: #238fb7; color: #f6f6f6; }
 
-/*LOS Services*/
-.main_services { background-color: #F6F6F6; }
-
-.main_services p { color: #000; font-size: 1.7rem; }
-
-.services { display: grid; grid-template-rows: 29.6rem 20.35rem 29.6rem 20rem; align-items: center; grid-template-areas: 'sec_dise' 'art_dise' 'sec_desa' 'art_desa'; }
+/*LOS Services ====000000000000000000000=============000000==========*/
+.services { display: grid; grid-template-rows: 38rem 25rem 35.5rem 20rem; align-items: center; grid-template-areas: 'sec_dise' 'art_dise' 'sec_desa' 'art_desa'; }
 
 .sec_dise { grid-area: sec_dise; }
 
@@ -202,9 +202,29 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .art_desa { grid-area: art_desa; }
 
+.main_services { background-color: #f6f6f6; align-self: start; }
+
 .articles h3 { color: #f6f6f6; font-size: 2.2rem; text-align: center; }
 
 .articles p { font-size: 1.7rem; text-align: center; }
+
+/*Seccion Diseño*/
+.sec_dise { display: grid; grid-template-columns: 49.5% 3.5% 47%; grid-template-rows: 216px 80px; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "texto-dis n img-dis" "btn-dis n img-dis"; }
+
+.main_services__img { grid-area: img-dis; width: 87%; }
+
+.cont-dise { grid-area: texto-dis; text-align: center; }
+
+.main_services__titulo { padding: 2.3rem 0 2rem 0; margin: 0; }
+
+.main_services__texto { color: #000; line-height: 3rem; margin: 0; }
+
+.main_services__btn { grid-area: btn-dis; display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 2px solid #238fb7; background-color: #238fb7; padding: 0.9rem; font-size: 1.8rem; align-self: start; }
+
+.main_services__btn:hover { background-color: transparent; color: #001219; }
+
+/*Seccion Desarrolloo*/
+.sec_desa { display: grid; grid-template-columns: 48% 5% 47%; grid-template-rows: 216px 80px; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "img-des n texto-des" "img-des n btn-des"; }
 
 /*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
 .encabezado--blog { background-image: url(../img/fondo-blog.jpg); height: 42rem; align-items: center; }

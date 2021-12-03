@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
 }
-.encabezado--servicio h1 {
+.encabezado-servicio__titulo {
     color: #f6f6f6;
     font-weight: 700;
     font-size: 8.5rem;
@@ -21,7 +21,7 @@
     text-align: center;
     margin-top: 9rem;
 }
-.encabezado--servicio p{
+.encabezado-servicio__texto{
     font-size: 2.3rem;
     font-weight: 700;
     color: #f6f6f6;
@@ -44,17 +44,10 @@
     background-color: $azul--principal;
     color: $blanco--opaco;
 }   
-/*LOS Services*/
-.main_services {
-    background-color: #F6F6F6;  
-}
-.main_services p {
-    color: #000;
-    font-size: 1.7rem;
-}
+/*LOS Services ====000000000000000000000=============000000==========*/
 .services {
     display: grid;
-    grid-template-rows: 29.6rem 20.35rem 29.6rem 20rem;
+    grid-template-rows: 38rem 25rem 35.5rem 20rem;
     align-items: center;
     grid-template-areas:'sec_dise'
                         'art_dise'
@@ -73,12 +66,67 @@
 .art_desa {
     grid-area: art_desa;
 }
+.main_services {
+    background-color: $blanco--opaco;  
+    align-self: start;
+}
 .articles h3{
-    color: #f6f6f6;
+    color: $blanco--opaco;
     font-size: 2.2rem;
     text-align: center;
 }
 .articles p{
     font-size: 1.7rem;
     text-align: center;
+}
+/*Seccion Diseño*/
+.sec_dise {
+    display: grid;
+    grid-template-columns: 49.5% 3.5% 47%;
+    grid-template-rows: 216px 80px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 11%;
+    grid-template-areas: "texto-dis n img-dis"
+                         "btn-dis n img-dis";
+}
+.main_services__img {
+    grid-area: img-dis;
+    width: 87%;
+}
+.cont-dise {
+    grid-area: texto-dis;
+    text-align: center; 
+}
+.main_services__titulo {
+    padding: 2.3rem 0 2rem 0;
+    margin: 0;
+}
+.main_services__texto {
+    color: #000;
+    line-height: 3rem;
+    margin: 0;
+}
+.main_services__btn {
+    grid-area: btn-dis;
+    @include boton(2px, $azul--principal);
+    background-color: $azul--principal;
+    padding: 0.9rem;
+    font-size: 1.8rem;
+    align-self: start;
+}
+.main_services__btn:hover {
+    background-color: transparent;
+    color: $azul--oscuro;
+}
+/*Seccion Desarrolloo*/
+.sec_desa {
+    display: grid;
+    grid-template-columns: 48% 5% 47%;
+    grid-template-rows: 216px 80px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 11%;
+    grid-template-areas: "img-des n texto-des"
+                         "img-des n btn-des";
 }
