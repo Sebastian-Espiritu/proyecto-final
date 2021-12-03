@@ -88,7 +88,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 0.8rem 0 0.8rem 1.7rem;
+    padding: 0.8rem 0 0.8rem 4%;
 }
 @media (min-width: 576px) and (max-width: 634px) {
     .links {
@@ -236,8 +236,8 @@ a.boton_blue {
 }
 .servicio__titulo {
     color: #001219;
-    font-weight: 700;
-    font-size: 2rem ;
+    font-weight: 600;
+    font-size: 2.5rem ;
     padding-bottom: 0.5rem;
 }
 .servicio__texto {
@@ -351,12 +351,12 @@ a.boton_blue {
     text-decoration: underline ;
 }
 /*SECCION DE Contacto*/
-.contacto h2 {
-    color: #f6f6f6;
+.sec_contac__titulo {
+    color: $blanco--opaco;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #FF0000;
 }
-.contacto {
+.sec_contac {
     display: flex;
     flex-direction: column;
     align-items: center;
