@@ -41,6 +41,25 @@ p {
     background-color: $azul--oscuro;
     display: flex;
 }
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.8rem 0 0.8rem 4%;
+}
+@media (min-width: 576px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        height: 5.6rem;
+        justify-content: space-between;
+        padding: 0 2rem;
+        align-items: center;
+    }
+    .nav__logo {
+        margin: 0;
+    }
+}
 .nav__menu {
     flex-grow: 0;
 }
@@ -55,6 +74,7 @@ p {
     margin: 0;
     padding: 1rem 0;
 }
+/*Enlacesssss*/
 .links__enlace {
     margin: 5rem 0;
     font-size: 1.8em;
@@ -63,39 +83,18 @@ p {
     border-bottom: 0.25rem solid transparent;
     transition: border .3s ease; 
 }
-.btn_contac {
-    @include boton(3px, $rojo--opaco);
-    font-size: 1.8rem;
-    font-weight: 600;
-    transition: background-color .5s, border .5s, color .5s;   
-    background-color: #CC1010;
-    width: 12rem;
-    height: 3.7rem;
-    margin-left: 1.5rem;
-    cursor: pointer;    
-}
-@media screen and (max-width: 576px) {
-    .btn_contac {
-        margin-top: 0.5rem;
+@media (min-width: 576px) {
+    .links {
+        display: flex;
+        flex-flow: row wrap;
     }
-}
-.btn_contac:hover {
-    background-color: $rojo--claro;
-    border: 4px solid $rojo--claro;
-    color: $blanco;
-}
-.nav__logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0.8rem 0 0.8rem 4%;
+    .links__enlace {
+        margin: 0.3rem 2rem;
+    }
 }
 @media (min-width: 576px) and (max-width: 634px) {
     .links {
         font-size: 7.7px;
-    }
-    .btn_contac {
-        font-size: 16.5px;
     }
 }
 .red a:hover {
@@ -112,25 +111,28 @@ a.boton_red {
 a.boton_blue { 
     border-bottom-color: #238fb7;
 }
-@media screen and (min-width: 576px) {
-    .nav {
-        display: flex;
-        flex-direction: row;
-        height: 5.6rem;
-        justify-content: space-between;
-        padding: 0 2rem;
-        align-items: center;
-    }
-    .links {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .links__enlace {
-        margin: 0.3rem 2rem;
-    }
-    .nav__logo {
-        margin: 0;
-    }
+/*Boton CONTACTOO*/
+.btn_contac {
+    @include boton(3px, $rojo--opaco);
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: background-color .5s, border .5s, color .5s;   
+    background-color: #CC1010;
+    width: 12rem;
+    height: 3.7rem;
+    margin-left: 1.5rem;
+    cursor: pointer;    
+}
+.btn_contac:hover {
+    background-color: $rojo--claro;
+    border: 4px solid $rojo--claro;
+    color: $blanco;
+}
+@media (min-width: 576px) {
+    .btn_contac {
+        margin-top: 0.5rem;
+        font-size: 16.5px;
+    } 
 }
 
 /*HEADER  ===00===00==== ===00===→→→→→→→→→→ PAGINAAA INDEEEEXXX ================= ============ HSABFCIA IABDIQA IUBAI8D */
@@ -173,7 +175,7 @@ a.boton_blue {
     align-items: flex-end;
     justify-content: center;
 }
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
     .encabezado__titulo{
         width: 42.5rem;
         margin: 6rem 0 2.2rem 10.5%;
@@ -191,16 +193,17 @@ a.boton_blue {
         padding-bottom: 3rem;
     }
 }
+/*botones - encabezado index*/
 .botones_red {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
-@media screen and (min-width: 576px){
+@media (min-width: 576px) {
     .botones_red {
         width: 40.38rem;
         margin-left: 11.8%;
-    }
+    }     
 }
 .btn_red {
     @include boton(4px, $rojo--claro);

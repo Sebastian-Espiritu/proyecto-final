@@ -34,22 +34,22 @@ p { color: #ffffff; }
 /* Navegacion =========== ===========  =========== */
 .nav { background-color: #001219; display: flex; }
 
+.nav__logo { display: flex; justify-content: center; align-items: flex-start; padding: 0.8rem 0 0.8rem 4%; }
+
+@media (min-width: 576px) { .nav { display: flex; flex-direction: row; height: 5.6rem; justify-content: space-between; padding: 0 2rem; align-items: center; }
+  .nav__logo { margin: 0; } }
+
 .nav__menu { flex-grow: 0; }
 
 .links { list-style-type: none; display: grid; grid-template-rows: auto; justify-items: center; align-items: center; height: auto; padding: 0; margin: 0; padding: 1rem 0; }
 
+/*Enlacesssss*/
 .links__enlace { margin: 5rem 0; font-size: 1.8em; color: #f6f6f6; text-decoration: none; border-bottom: 0.25rem solid transparent; transition: border .3s ease; }
 
-.btn_contac { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 3px solid #cc1010; font-size: 1.8rem; font-weight: 600; transition: background-color .5s, border .5s, color .5s; background-color: #CC1010; width: 12rem; height: 3.7rem; margin-left: 1.5rem; cursor: pointer; }
+@media (min-width: 576px) { .links { display: flex; flex-flow: row wrap; }
+  .links__enlace { margin: 0.3rem 2rem; } }
 
-@media screen and (max-width: 576px) { .btn_contac { margin-top: 0.5rem; } }
-
-.btn_contac:hover { background-color: #FF0000; border: 4px solid #FF0000; color: #ffffff; }
-
-.nav__logo { display: flex; justify-content: center; align-items: flex-start; padding: 0.8rem 0 0.8rem 4%; }
-
-@media (min-width: 576px) and (max-width: 634px) { .links { font-size: 7.7px; }
-  .btn_contac { font-size: 16.5px; } }
+@media (min-width: 576px) and (max-width: 634px) { .links { font-size: 7.7px; } }
 
 .red a:hover { border-bottom-color: #FF0000; color: #FF0000; }
 
@@ -59,10 +59,12 @@ a.boton_red { border-bottom-color: #FF0000; }
 
 a.boton_blue { border-bottom-color: #238fb7; }
 
-@media screen and (min-width: 576px) { .nav { display: flex; flex-direction: row; height: 5.6rem; justify-content: space-between; padding: 0 2rem; align-items: center; }
-  .links { display: flex; flex-flow: row wrap; }
-  .links__enlace { margin: 0.3rem 2rem; }
-  .nav__logo { margin: 0; } }
+/*Boton CONTACTOO*/
+.btn_contac { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 3px solid #cc1010; font-size: 1.8rem; font-weight: 600; transition: background-color .5s, border .5s, color .5s; background-color: #CC1010; width: 12rem; height: 3.7rem; margin-left: 1.5rem; cursor: pointer; }
+
+.btn_contac:hover { background-color: #FF0000; border: 4px solid #FF0000; color: #ffffff; }
+
+@media (min-width: 576px) { .btn_contac { margin-top: 0.5rem; font-size: 16.5px; } }
 
 /*HEADER  ===00===00==== ===00===→→→→→→→→→→ PAGINAAA INDEEEEXXX ================= ============ HSABFCIA IABDIQA IUBAI8D */
 .encabezado { background-image: url(../img/fondo_index.jpg); background-position: right; background-repeat: no-repeat; background-size: cover; padding: 0; display: flex; flex-direction: column; align-items: flex-start; height: 56.9rem; }
@@ -75,13 +77,14 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .ubi { display: flex; width: 100%; padding-bottom: 2rem; align-items: flex-end; justify-content: center; }
 
-@media screen and (min-width: 576px) { .encabezado__titulo { width: 42.5rem; margin: 6rem 0 2.2rem 10.5%; text-align: inherit; }
+@media (min-width: 576px) { .encabezado__titulo { width: 42.5rem; margin: 6rem 0 2.2rem 10.5%; text-align: inherit; }
   .encabezado__texto { max-width: 70rem; padding-left: 10.5%; padding-bottom: 2.2rem; text-align: inherit; }
   .ubi { width: 29rem; padding-left: 12.6%; padding-bottom: 3rem; } }
 
+/*botones - encabezado index*/
 .botones_red { display: flex; width: 100%; justify-content: space-evenly; }
 
-@media screen and (min-width: 576px) { .botones_red { width: 40.38rem; margin-left: 11.8%; } }
+@media (min-width: 576px) { .botones_red { width: 40.38rem; margin-left: 11.8%; } }
 
 .btn_red { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 4px solid #FF0000; width: 15.35rem; height: 5rem; padding: 2px 0; }
 
