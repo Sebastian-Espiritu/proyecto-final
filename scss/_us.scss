@@ -1,87 +1,105 @@
 /* Header  ======0000======000==== PAGINA NOSOTROOOSSSS*/
-.blog-titulo {
+.us-titulo {
     text-align: center;
     font-size: 8rem;
     color: $blanco--opaco;
     font-weight: 600;
-}
-.yo {
-    display: flex;
+} /*aqui acabo el header*/
+
+/*Avatar Mio */
+.sebas {
+    display: inline-flex;
     justify-content: space-between;
-    margin: 0 13%;
+    margin: 3rem 19%;
 }
-.yo-avt--fondo {
+.fondo-mi-avatar {
     background-color: $blanco--opaco;
-    border-radius: 33px;
+    border-radius: 15px;
     width: 30.5rem;
     height: 30.5rem;
     margin-right: 1.5rem;
 }
-.yo-avt {
+.mi-avatar {
     width: 100%;
 }
-.yo-descrip {
+/*descripcion 1*/
+.mi-descrip {
     background-color: $blanco--opaco;
-    width: 49.5rem;
-    border-radius: 33px;
+    width: 40rem;
+    border-radius: 20px;
+    margin-left: 5rem;
 }
-.yo-titulo {
+.mi-titulo {
     width: 100%;
     padding: 4% 0 0 5%;
+    font-weight: 700;
 }
-.yo-texto {
+.mi-texto {
     color: $azul--oscuro;
     margin: 1rem;
+    font-size: 2rem;
 }
 @media screen and (max-width: 800px) {
-    .yo {
+    .sebas {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 13%;
     }
-    .yo-descrip {
+    .mi-descrip {
         width: 30.5rem;
         margin-top: 5rem;
     }
 }
-.personajes {
+
+/*Integrantesss ---  Paginaaa Nosotrosss*/
+.Integrantes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "susana" "maria" "bruno";
-    margin-top: 8rem;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-areas: "susana maria bruno";
+    margin: 2.5rem 0;
     background-color: $blanco--opaco;
     justify-items: center;
-    padding: 1.5rem 0;
 }
-@media screen and (max-width: 800px) {
-    .personajes {
+@media screen and (max-width: 768px) {
+    .Integrantes {
         display: flex;
         flex-direction: column;
     }
 }
-.personajes_1 {
+.susana {
     grid-area: susana;
 }
-.personajes_2 {
+.maria {
     grid-area: maria;
 }
-.personajes-3 {
+.bruno {
     grid-area: bruno;
 }
-.espacio {
+/*Avatareeessss*/
+.participantes {
+    padding: 2rem 0;
+    max-width: 40rem;
+}
+.fondo-avatar {
     display: flex;
     justify-content: center;
 }
-.espacio--avt {
-    width: 19rem;
+.fondo-avatar img {
+    width: 22rem;
     height: 21.5rem;
 }
-.nombre {
+/*Descripcioneesss*/
+.Int-titulo {
     font-weight: 700;
+    text-align: center;
 }
-.descrip {
+.Int-texto {
     color: $azul--oscuro;
     margin: 2rem;
     font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
 }
+
+/* ESTILOS generales-de-los-participantes*/
