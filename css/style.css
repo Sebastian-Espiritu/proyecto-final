@@ -201,6 +201,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .encabezado-servicio__texto { font-size: 2.3rem; font-weight: 700; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
 
+/*botones - encabezado services*/
 .botones_blue { display: flex; justify-content: space-between; margin-top: 6rem; width: 36%; }
 
 .btn_blue { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 4px solid #238fb7; padding: 1.3rem 1rem; }
@@ -218,11 +219,16 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .art_desa { grid-area: art_desa; }
 
+/*Estilos Generales - servicios*/
 .main_services { background-color: #f6f6f6; align-self: stretch; }
 
 .main_services__btn { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 2px solid #238fb7; background-color: #238fb7; padding: 0.9rem; font-size: 1.8rem; align-self: start; }
 
 .main_services__btn:hover { background-color: transparent; color: #001219; }
+
+.main_services__titulo { padding: 2.3rem 0 2rem 0; margin: 0; }
+
+.main_services__texto { color: #000; line-height: 3rem; margin: 0; }
 
 .articles h3 { color: #f6f6f6; font-size: 2.2rem; text-align: center; }
 
@@ -235,12 +241,9 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .cont-dise { grid-area: texto-dis; text-align: center; }
 
-.main_services__titulo { padding: 2.3rem 0 2rem 0; margin: 0; }
-
-.main_services__texto { color: #000; line-height: 3rem; margin: 0; }
-
 .btn-dise { grid-area: btn-dis; }
 
+/*Articulo  Diseñoo*/
 /*Seccion Desarrolloo*/
 .sec_desa { display: grid; grid-template-columns: 48% 5% 47%; grid-template-rows: 216px 80px; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "img-des n texto-des" "img-des n btn-des"; }
 
@@ -250,6 +253,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .btn-desa { grid-area: btn-des; }
 
+/*Articulo  Desarrollooo*/
 /*Modif. footer*/
 .footer__texto--services { margin: 0 0 0.5px 0; font-size: 18.5px; }
 
@@ -280,6 +284,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .conten__input--area { height: 22rem; width: 100%; }
 
+/*botones de Contacto*/
 .form__botones { margin: 3.5rem 0; display: flex; flex-direction: row; }
 
 .botoform { margin: 0 1rem; }

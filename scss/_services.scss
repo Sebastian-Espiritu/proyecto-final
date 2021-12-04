@@ -30,6 +30,7 @@
     margin-top: 4.5rem;
     word-spacing: 0.8rem;
 }
+/*botones - encabezado services*/
 .botones_blue {
     display: flex;
     justify-content: space-between;
@@ -66,6 +67,7 @@
 .art_desa {
     grid-area: art_desa;
 }
+/*Estilos Generales - servicios*/
 .main_services {
     background-color: $blanco--opaco;  
     align-self: stretch;
@@ -80,6 +82,15 @@
 .main_services__btn:hover {
     background-color: transparent;
     color: $azul--oscuro;
+}
+.main_services__titulo {
+    padding: 2.3rem 0 2rem 0;
+    margin: 0;
+}
+.main_services__texto {
+    color: #000;
+    line-height: 3rem;
+    margin: 0;
 }
 .articles h3{
     color: $blanco--opaco;
@@ -110,18 +121,10 @@
     grid-area: texto-dis;
     text-align: center; 
 }
-.main_services__titulo {
-    padding: 2.3rem 0 2rem 0;
-    margin: 0;
-}
-.main_services__texto {
-    color: #000;
-    line-height: 3rem;
-    margin: 0;
-}
 .btn-dise {
     grid-area: btn-dis;
 }
+/*Articulo  Diseñoo*/
 /*Seccion Desarrolloo*/
 .sec_desa {
     display: grid;
@@ -144,6 +147,7 @@
 .btn-desa {
     grid-area: btn-des;
 }
+/*Articulo  Desarrollooo*/
 /*Modif. footer*/
 .footer__texto--services {
     margin: 0 0 0.5px 0;
