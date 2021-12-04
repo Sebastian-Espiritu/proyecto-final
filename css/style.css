@@ -91,32 +91,36 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .btn_red:hover { background-color: #FF0000; color: #ffffff; }
 
 /*Mis Servicios=============000=======================0000000======*/
+.main { display: flex; flex-direction: column; align-items: center; margin-top: 4rem; }
+
 .main__titulo { color: #f6f6f6; text-align: center; }
 
-.main { display: flex; flex-direction: column; align-items: center; margin-top: 4rem; }
+@media (min-width: 576px) { .servicios { display: flex; flex-direction: column; align-items: center; } }
+
+@media (min-width: 768px) { .servicios { display: grid; grid-template-columns: repeat(2, 50%); justify-items: center; } }
 
 .servicio { background-color: #fff; display: flex; flex-direction: column; align-items: center; width: 34rem; margin: 2rem 5rem; border-radius: 40px; padding: 1rem 2rem; }
 
 .servicio__titulo { color: #001219; font-weight: 600; font-size: 2.5rem; padding-bottom: 0.5rem; }
 
+@media (min-width: 576px) { .servicio { width: 88%; margin: 2rem 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: 29px 200px; justify-items: center; }
+  .servicio__titulo { grid-column: 1/3; } }
+
+@media (min-width: 768px) { .servicio { width: 32rem; margin: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center; } }
+
 .servicio__texto { color: #000; text-align: center; line-height: 2; }
 
+/*Botones  Sec-servicio*/
 .servicio__botones { display: flex; justify-content: space-evenly; align-items: center; border-radius: 13px; background-color: #CC1010; width: 16.2rem; height: 4rem; font-size: 1.6rem; color: #000; transition: background-color .5s , color .5s; }
 
 .servicio__botones:hover { background-color: #238fb7; color: #F6F6F6; }
-
-@media screen and (min-width: 600px) { .servicio { width: 88%; margin: 2rem 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: 29px 200px; justify-items: center; }
-  .servicio__titulo { grid-column: 1/3; }
-  .servicios { display: flex; flex-direction: column; align-items: center; } }
-
-@media screen and (min-width: 783px) { .servicios { display: grid; grid-template-columns: repeat(2, 50%); justify-items: center; }
-  .servicio { width: 32rem; margin: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center; } }
 
 /*SECCION de blog  ========= =========0000000000000======= ==============*/
 .sec_blog { background-color: #ffffff; padding: 2rem; margin-top: 4rem; }
 
 .sec_blog--titulo { color: #001219; text-align: center; margin-bottom: 1rem; }
 
+/*boton de sec-Blog*/
 .cont_blog { background-color: #f6f6f6; display: inline-flex; flex-direction: column; margin-left: 30px; width: 34rem; transition: all 300ms; border: 1px solid #464646; border-radius: 18px; cursor: pointer; height: 23rem; }
 
 .cont_blog:hover { transform: scale(1.09); }
@@ -241,13 +245,13 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .footer__texto--services { margin: 0 0 0.5px 0; font-size: 18.5px; }
 
 /*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
-.encabezado--blog { background-image: url(../img/fondo-blog.jpg); height: 42rem; align-items: center; }
+.encabezado-blog { background-image: url(../img/fondo-blog.jpg); height: 42rem; align-items: center; }
 
 .fondo__color--blog { height: 42rem; background-color: rgba(0, 0, 0, 0.6); border-bottom: #238fb7 solid 0.9rem; }
 
 .encabezado__titulo--blog { margin: 0; text-align: center; width: 100%; margin-top: 6.7rem; font-size: 8rem; }
 
-.blog__cabezado--text { line-height: 1.3; font-size: 2.3rem; font-weight: 600; margin: 6.5rem 7.5rem 0 7.5rem; text-align: start; }
+.encabezado-blog__texto { line-height: 1.3; font-size: 2.3rem; font-weight: 600; margin: 6.5rem 7.5rem 0 7.5rem; text-align: start; }
 
 /*Formulario*/
 /*paginaa formulariioOOOOOOO*/
