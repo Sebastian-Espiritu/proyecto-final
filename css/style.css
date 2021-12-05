@@ -147,37 +147,41 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .redes { display: flex; justify-content: space-evenly; width: 100%; padding-bottom: 0.4rem; }
 
 /* Header  ======0000======000==== PAGINA NOSOTROOOSSSS*/
-.us-titulo { text-align: center; font-size: 7.5rem; color: #f6f6f6; font-weight: 600; }
+.us-titulo { text-align: center; font-size: 6rem; color: #f6f6f6; font-weight: 600; }
 
 /*aqui acabo el header*/
-@media (max-width: 768px) { .us-titulo { font-size: 6rem; } }
+@media (min-width: 768px) { .us-titulo { font-size: 7.5rem; } }
 
 /*Avatar Mio */
-.sebas { display: flex; flex-direction: column; align-items: center; margin: 0 13%; }
+.sebas { display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 2.5rem; background-color: #f6f6f6; padding: 0 2rem 2rem 2rem; border-radius: 14px; }
 
 .ceo { display: flex; justify-content: center; }
 
-@media (min-width: 768px) { .sebas { display: inline-flex; flex-direction: row; justify-content: space-between; margin: 3rem 0; } }
+@media (min-width: 768px) { .sebas { display: inline-flex; flex-direction: row; justify-content: space-between; margin: 3rem 0; background-color: transparent; } }
 
-.fondo-mi-avatar { background-color: #f6f6f6; border-radius: 15px; width: 30.5rem; height: 30.5rem; margin-right: 1.5rem; }
+.fondo-mi-avatar { background-color: #f6f6f6; border-radius: 15px; width: 30.5rem; height: 30.5rem; display: flex; justify-content: center; align-items: center; }
 
-.mi-avatar { width: 100%; }
+.mi-avatar { width: 25rem; }
+
+@media (min-width: 768px) { .mi-avatar { width: 100%; } }
 
 /*descripcion 1*/
-.mi-descrip { background-color: #f6f6f6; width: 30.5rem; height: 30.5rem; border-radius: 20px; margin-top: 5rem; }
+.mi-descrip { background-color: #f6f6f6; width: 30.5rem; height: 25rem; border-radius: 20px; margin: 0; }
 
-@media (min-width: 768px) { .mi-descrip { width: 40rem; margin: 0; } }
+@media (min-width: 768px) { .mi-descrip { width: 40rem; margin-left: 1.5rem; height: 30.5rem; } }
 
 @media (min-width: 850px) { .mi-descrip { margin: 0 0 0 4rem; } }
 
-.mi-titulo { width: 100%; padding: 4% 0 0 5%; font-weight: 600; font-size: 3rem; padding-bottom: 1rem; }
+.mi-titulo { width: 100%; padding: 3% 0 0 5%; font-weight: 600; font-size: 3rem; padding-bottom: 1rem; }
 
-.mi-texto { color: #001219; margin: 1rem 3rem 1rem 2rem; font-size: 1.7rem; font-weight: 600; }
+.mi-texto { text-align: center; color: #001219; margin: 1rem 2rem; font-size: 1.7rem; font-weight: 600; width: 25.5rem; }
+
+@media (min-width: 768px) { .mi-texto { width: auto; margin-right: 3rem; text-align: inherit; } }
 
 /*Integrantesss ---  Paginaaa Nosotrosss*/
 .Integrantes { display: grid; grid-template-columns: 33.3% 33.4% 33.3%; grid-template-areas: "susana maria bruno"; margin: 2.5rem 0; background-color: #f6f6f6; justify-items: center; }
 
-@media (max-width: 768px) { .Integrantes { display: flex; flex-direction: column; } }
+@media (max-width: 768px) { .Integrantes { display: flex; flex-direction: column; align-items: center; background-color: transparent; } }
 
 .susana { grid-area: susana; }
 
@@ -191,12 +195,18 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .fondo-avatar img { width: 22rem; height: 21.5rem; }
 
 /*Descripcioneesss*/
-.Int-titulo { font-weight: 700; text-align: center; color: black; }
+.Int-titulo { font-weight: 600; text-align: center; color: #001219; font-size: 3rem; }
 
-.Int-texto { max-width: 27rem; color: #001219; margin: 2rem; font-weight: 600; text-align: center; font-size: 1.5rem; }
+@media (min-width: 768px) { .Int-titulo { font-weight: 700; font-size: 2rem; } }
+
+.Int-texto { width: 22rem; color: #001219; margin: 2rem; font-weight: 600; text-align: center; font-size: 1.8rem; }
+
+@media (min-width: 768px) { .Int-texto { font-size: 1.5rem; } }
 
 /* ESTILOS generales-de-los-participantes*/
-.participantes { padding: 2rem 0; max-width: 40rem; }
+.participantes { padding: 3rem 2rem; max-width: 30.5rem; background-color: #f6f6f6; margin: 1.5rem 0; border-radius: 14px; }
+
+@media (min-width: 768px) { .participantes { padding: 2rem 0; } }
 
 /*HEADER 2*/
 /*pagina SERVICIOSS*/

@@ -1,21 +1,25 @@
 /* Header  ======0000======000==== PAGINA NOSOTROOOSSSS*/
 .us-titulo {
     text-align: center;
-    font-size: 7.5rem;
+    font-size: 6rem;
     color: $blanco--opaco;
     font-weight: 600;
 } /*aqui acabo el header*/
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .us-titulo {
-    font-size: 6rem;
+    font-size: 7.5rem;
     }
 }
 /*Avatar Mio */
 .sebas {
     display: flex;
     flex-direction: column;
+    justify-content:center;
     align-items: center;
-    margin: 0 13%;
+    margin-top: 2.5rem;
+    background-color: $blanco--opaco;
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 14px;
 }
 .ceo {
     display: flex;
@@ -27,6 +31,7 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 3rem 0;
+        background-color: transparent;
     }
 }
 .fondo-mi-avatar {
@@ -34,23 +39,31 @@
     border-radius: 15px;
     width: 30.5rem;
     height: 30.5rem;
-    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mi-avatar {
-    width: 100%;
+    width: 25rem;
+}
+@media (min-width: 768px) {
+    .mi-avatar {
+        width: 100%;
+    } 
 }
 /*descripcion 1*/
 .mi-descrip {
     background-color: $blanco--opaco;
     width: 30.5rem;
-    height: 30.5rem;
+    height: 25rem;
     border-radius: 20px;
-    margin-top: 5rem;
+    margin: 0;
 }
 @media (min-width: 768px) {
     .mi-descrip {
         width: 40rem;
-        margin: 0;
+        margin-left: 1.5rem;
+        height: 30.5rem;
     }
 }
 @media (min-width: 850px) {
@@ -60,18 +73,26 @@
 }
 .mi-titulo {
     width: 100%;
-    padding: 4% 0 0 5%;
+    padding: 3% 0 0 5%;
     font-weight: 600;
     font-size: 3rem;
     padding-bottom: 1rem;
 }
 .mi-texto {
+    text-align: center;
     color: $azul--oscuro;
-    margin: 1rem 3rem 1rem 2rem;
+    margin: 1rem 2rem;
     font-size: 1.7rem;
     font-weight: 600;
+    width: 25.5rem;
 }
-
+@media (min-width: 768px) {
+    .mi-texto {
+        width: auto;
+        margin-right: 3rem;
+        text-align: inherit;
+    } 
+}
 /*Integrantesss ---  Paginaaa Nosotrosss*/
 .Integrantes {
     display: grid;
@@ -85,6 +106,8 @@
     .Integrantes {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background-color: transparent;
     }
 }
 .susana {
@@ -107,21 +130,41 @@
 }
 /*Descripcioneesss*/
 .Int-titulo {
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
-    color: black;
+    color: $azul--oscuro;
+    font-size: 3rem;
+}
+@media (min-width: 768px) {
+     .Int-titulo {
+        font-weight: 700;
+        font-size: 2rem;
+     }
 }
 .Int-texto {
-    max-width: 27rem;
+    width: 22rem;
     color: $azul--oscuro;
     margin: 2rem;
     font-weight: 600;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+    .Int-texto {
+        font-size: 1.5rem;
+    } 
 }
 
 /* ESTILOS generales-de-los-participantes*/
 .participantes {
-    padding: 2rem 0;
-    max-width: 40rem;
+    padding: 3rem 2rem;
+    max-width: 30.5rem;
+    background-color: $blanco--opaco;
+    margin: 1.5rem 0;
+    border-radius: 14px;
+}
+@media (min-width: 768px) {
+    .participantes {
+        padding: 2rem 0;
+    }
 }
