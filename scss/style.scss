@@ -41,13 +41,7 @@ p {
     background-color: $azul--oscuro;
     display: flex;
 }
-.nav__logo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0.8rem 0 0.8rem 4%;
-}
-@media (min-width: 576px) {
+@media (min-width: 992px) {
     .nav {
         display: flex;
         flex-direction: row;
@@ -56,9 +50,12 @@ p {
         padding: 0 2rem;
         align-items: center;
     }
-    .nav__logo {
-        margin: 0;
-    }
+}
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.8rem 0 0.8rem 4%;
 }
 .nav__menu {
     flex-grow: 0;
@@ -74,6 +71,12 @@ p {
     margin: 0;
     padding: 1rem 0;
 }
+@media (min-width: 992px) {
+    .links {
+        display: flex;
+        flex-flow: row wrap;
+    } 
+}
 /*Enlacesssss*/
 .links__enlace {
     margin: 5rem 0;
@@ -84,17 +87,8 @@ p {
     transition: border .3s ease; 
 }
 @media (min-width: 576px) {
-    .links {
-        display: flex;
-        flex-flow: row wrap;
-    }
     .links__enlace {
         margin: 0.3rem 2rem;
-    }
-}
-@media (min-width: 576px) and (max-width: 634px) {
-    .links {
-        font-size: 7.7px;
     }
 }
 .red a:hover {

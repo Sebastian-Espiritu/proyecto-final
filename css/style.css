@@ -34,22 +34,20 @@ p { color: #ffffff; }
 /* Navegacion =========== ===========  =========== */
 .nav { background-color: #001219; display: flex; }
 
-.nav__logo { display: flex; justify-content: center; align-items: flex-start; padding: 0.8rem 0 0.8rem 4%; }
+@media (min-width: 992px) { .nav { display: flex; flex-direction: row; height: 5.6rem; justify-content: space-between; padding: 0 2rem; align-items: center; } }
 
-@media (min-width: 576px) { .nav { display: flex; flex-direction: row; height: 5.6rem; justify-content: space-between; padding: 0 2rem; align-items: center; }
-  .nav__logo { margin: 0; } }
+.nav__logo { display: flex; justify-content: center; align-items: flex-start; padding: 0.8rem 0 0.8rem 4%; }
 
 .nav__menu { flex-grow: 0; }
 
 .links { list-style-type: none; display: grid; grid-template-rows: auto; justify-items: center; align-items: center; height: auto; padding: 0; margin: 0; padding: 1rem 0; }
 
+@media (min-width: 992px) { .links { display: flex; flex-flow: row wrap; } }
+
 /*Enlacesssss*/
 .links__enlace { margin: 5rem 0; font-size: 1.8em; color: #f6f6f6; text-decoration: none; border-bottom: 0.25rem solid transparent; transition: border .3s ease; }
 
-@media (min-width: 576px) { .links { display: flex; flex-flow: row wrap; }
-  .links__enlace { margin: 0.3rem 2rem; } }
-
-@media (min-width: 576px) and (max-width: 634px) { .links { font-size: 7.7px; } }
+@media (min-width: 576px) { .links__enlace { margin: 0.3rem 2rem; } }
 
 .red a:hover { border-bottom-color: #FF0000; color: #FF0000; }
 
@@ -199,14 +197,14 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 @media (min-width: 768px) { .Int-titulo { font-weight: 700; font-size: 2rem; } }
 
-.Int-texto { width: 22rem; color: #001219; margin: 2rem; font-weight: 600; text-align: center; font-size: 1.8rem; }
+.Int-texto { max-width: 22rem; color: #001219; margin: 2rem auto; font-weight: 600; text-align: center; font-size: 1.8rem; }
 
-@media (min-width: 768px) { .Int-texto { font-size: 1.5rem; } }
+@media (min-width: 768px) { .Int-texto { font-size: 1.5rem; max-width: 18.5rem; } }
 
 /* ESTILOS generales-de-los-participantes*/
-.participantes { padding: 3rem 2rem; max-width: 30.5rem; background-color: #f6f6f6; margin: 1.5rem 0; border-radius: 14px; }
+.participantes { padding: 3rem 2rem; width: 34.5rem; background-color: #f6f6f6; margin: 1.5rem 0; border-radius: 14px; }
 
-@media (min-width: 768px) { .participantes { padding: 2rem 0; } }
+@media (min-width: 768px) { .participantes { padding: 2rem 0; max-width: 30.5rem; } }
 
 /*HEADER 2*/
 /*pagina SERVICIOSS*/
