@@ -99,14 +99,19 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .servicio { background-color: #fff; display: flex; flex-direction: column; align-items: center; width: 34rem; margin: 2rem 5rem; border-radius: 40px; padding: 1rem 2rem; }
 
-.servicio__titulo { color: #001219; font-weight: 600; font-size: 2.5rem; padding-bottom: 0.5rem; }
-
-@media (min-width: 576px) { .servicio { width: 88%; margin: 2rem 0; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: 29px 200px; justify-items: center; }
-  .servicio__titulo { grid-column: 1/3; } }
+@media (min-width: 576px) { .servicio { width: 88%; margin: 2rem 0; display: grid; justify-items: center; grid-template-columns: repeat(2, 1fr); grid-template-rows: 29px 200px 50px; grid-template-areas: "titulo titulo" "diseño texto" "diseno boton"; }
+  .ser-diseño { grid-area: boton; }
+  .ser-desarrollo { grid-area: boton; } }
 
 @media (min-width: 768px) { .servicio { width: 32rem; margin: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center; } }
 
+.servicio__titulo { color: #001219; font-weight: 600; font-size: 2.5rem; padding-bottom: 0.5rem; }
+
+@media (min-width: 576px) { .servicio__titulo { grid-column: 1/3; } }
+
 .servicio__texto { color: #000; text-align: center; line-height: 2; }
+
+@media (min-width: 576px) { .servicio__texto { align-self: start; margin-top: 1rem; } }
 
 /*Botones  Sec-servicio*/
 .servicio__botones { display: flex; justify-content: space-evenly; align-items: center; border-radius: 13px; background-color: #CC1010; width: 16.2rem; height: 4rem; font-size: 1.6rem; color: #000; transition: background-color .5s , color .5s; }
@@ -208,23 +213,33 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 /*HEADER 2*/
 /*pagina SERVICIOSS*/
-.encabezado--servicio { background-image: url(../img/fondo-services.png); background-position: right; background-repeat: no-repeat; background-size: cover; height: 60rem; }
+.encabezado--servicio { background-image: url(../img/fondo-services.png); background-position: right; background-repeat: no-repeat; background-size: cover; }
 
-.fondo__color--servicio { border-bottom: #238fb7 solid 0.9rem; height: 60rem; display: flex; flex-direction: column; align-items: center; }
+.fondo__color--servicio { border-bottom: #238fb7 solid 0.9rem; display: flex; flex-direction: column; align-items: center; height: auto; }
 
 .encabezado-servicio__titulo { color: #f6f6f6; font-weight: 600; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
 
-.encabezado-servicio__texto { font-size: 2.3rem; font-weight: 400; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
+@media (max-width: 768px) { .encabezado-servicio__titulo { font-size: 6.5rem; width: auto; } }
+
+.encabezado-servicio__texto { font-size: 2.3rem; font-weight: 400; color: #f6f6f6; max-width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
 
 /*botones - encabezado services*/
-.botones_blue { display: flex; justify-content: space-between; margin-top: 6rem; width: 36%; }
+.botones_blue { display: flex; justify-content: center; margin: 6rem 0 4rem 0; width: 100%; }
 
-.btn_blue { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 4px solid #238fb7; padding: 1.3rem 1rem; }
+@media (min-width: 1030px) { .botones_blue { justify-content: space-between; width: 36%; } }
+
+.btn-desarrollo { margin-right: 2rem; }
+
+.btn-diseno { width: 12.8rem; }
+
+.btn_blue { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 4px solid #238fb7; padding: 1.1rem 1rem; }
 
 .btn_blue:hover { background-color: #238fb7; color: #f6f6f6; }
 
 /*LOS Services ====000000000000000000000=============000000==========*/
-.services { display: grid; grid-template-rows: 31.5rem 31rem 30rem 27rem; align-items: center; grid-template-areas: 'sec_dise' 'art_dise' 'sec_desa' 'art_desa'; }
+.services { display: flex; flex-direction: column; }
+
+@media (min-width: 768px) { .services { display: grid; grid-template-rows: 31.5rem 31rem 30rem 27rem; align-items: center; grid-template-areas: 'sec_dise' 'art_dise' 'sec_desa' 'art_desa'; } }
 
 .sec_dise { grid-area: sec_dise; }
 
@@ -235,7 +250,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .art_desa { grid-area: art_desa; }
 
 /*Estilos Generales - servicios*/
-.main_services { background-color: #f6f6f6; align-self: stretch; }
+.main_services { background-color: #f6f6f6; height: auto; display: flex; justify-content: center; }
 
 .main_services__btn { display: flex; justify-content: center; align-items: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 2px solid #238fb7; background-color: #238fb7; padding: 0.9rem; font-size: 1.8rem; align-self: start; }
 
@@ -243,30 +258,38 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .main_services__titulo { padding: 2.3rem 0 2rem 0; margin: 0; }
 
-.main_services__texto { color: #000; line-height: 3rem; margin: 0; }
+.main_services__texto { color: #000; line-height: 3rem; margin: 0; align-self: start; }
 
 .articles h3 { color: #f6f6f6; font-size: 2.2rem; text-align: center; }
 
 .articles p { font-size: 1.7rem; text-align: center; }
 
 /*Seccion Diseño*/
-.sec_dise { height: 100%; display: grid; grid-template-columns: 49.5% 3.5% 47%; grid-template-rows: 73% 27%; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "texto-dis n img-dis" "btn-dis n img-dis"; }
+.sec_dise { height: auto; display: flex; flex-direction: column; align-items: center; max-width: 63.1rem; }
 
-.main_services__img-dise { grid-area: img-dis; width: 87%; }
+@media (min-width: 768px) { .sec_dise { margin: 0 9%; height: 100%; display: grid; grid-template-columns: 49.5% 3.5% 47%; grid-template-rows: 50px 205px 60px; justify-items: center; align-items: center; grid-template-areas: "titulo-dise n img-dis" "texto-dis n img-dis" "btn-dis n img-dis"; } }
 
-.cont-dise { grid-area: texto-dis; text-align: center; }
+.main_services__img-dise { grid-area: img-dis; width: 100%; }
 
-.btn-dise { grid-area: btn-dis; }
+.titulo-dise { grid-area: titulo-dise; }
+
+.cont-dise { grid-area: texto-dis; text-align: center; margin: 1rem; }
+
+.btn-dise { grid-area: btn-dis; margin: 0.5rem auto; }
 
 /*Articulo  Diseñoo*/
 /*Seccion Desarrolloo*/
-.sec_desa { display: grid; grid-template-columns: 48% 5% 47%; grid-template-rows: 216px 80px; justify-items: center; align-items: center; margin: 0 11%; grid-template-areas: "img-des n texto-des" "img-des n btn-des"; }
+.sec_desa { height: auto; display: flex; flex-direction: column; align-items: center; max-width: 63.1rem; }
 
-.main_services__img-desa { grid-area: img-des; width: 87%; }
+@media (min-width: 768px) { .sec_desa { display: grid; grid-template-columns: 47% 5% 48%; grid-template-rows: 50px 190px 60px; justify-items: center; align-items: center; margin: 0 5%; grid-template-areas: "img-des n titulo-desa" "img-des n texto-des" "img-des n btn-des"; } }
 
-.cont-desa { grid-area: texto-des; text-align: center; }
+.main_services__img-desa { grid-area: img-des; width: 100%; }
 
-.btn-desa { grid-area: btn-des; }
+.titulo-desa { grid-area: titulo-desa; }
+
+.cont-desa { grid-area: texto-des; text-align: center; margin: 1rem; }
+
+.btn-desa { grid-area: btn-des; margin: 0.5rem auto; }
 
 /*Articulo  Desarrollooo*/
 /*Modif. footer*/

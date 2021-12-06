@@ -4,14 +4,13 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60rem;
 }
 .fondo__color--servicio {
     border-bottom: #238fb7 solid 0.9rem;
-    height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 .encabezado-servicio__titulo {
     color: #f6f6f6;
@@ -21,11 +20,17 @@
     text-align: center;
     margin-top: 9rem;
 }
+@media (max-width: 768px) {
+     .encabezado-servicio__titulo {
+        font-size: 6.5rem;
+        width: auto;
+     }
+}
 .encabezado-servicio__texto{
     font-size: 2.3rem;
     font-weight: 400;
     color: #f6f6f6;
-    width: 85rem;
+    max-width: 85rem;
     text-align: center;
     margin-top: 4.5rem;
     word-spacing: 0.8rem;
@@ -33,13 +38,25 @@
 /*botones - encabezado services*/
 .botones_blue {
     display: flex;
-    justify-content: space-between;
-    margin-top: 6rem;
-    width: 36%;
+    justify-content: center;
+    margin: 6rem 0 4rem 0;
+    width: 100%;
+}
+@media (min-width: 1030px) {
+    .botones_blue {
+        justify-content: space-between;
+        width: 36%;
+    }
+}
+.btn-desarrollo {
+    margin-right: 2rem;
+}
+.btn-diseno {
+    width: 12.8rem;
 }
 .btn_blue {
     @include boton(4px, $azul--principal);
-    padding: 1.3rem 1rem;
+    padding: 1.1rem 1rem;
 }   
 .btn_blue:hover {
     background-color: $azul--principal;
@@ -47,13 +64,19 @@
 }   
 /*LOS Services ====000000000000000000000=============000000==========*/
 .services {
-    display: grid;
-    grid-template-rows: 31.5rem 31rem 30rem 27rem;
-    align-items: center;
-    grid-template-areas:'sec_dise'
-                        'art_dise'
-                        'sec_desa'
-                        'art_desa';
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .services {
+        display: grid;
+        grid-template-rows: 31.5rem 31rem 30rem 27rem;
+        align-items: center;
+        grid-template-areas:'sec_dise'
+                            'art_dise'
+                            'sec_desa'
+                            'art_desa';
+    }    
 }
 .sec_dise {
     grid-area: sec_dise;
@@ -70,7 +93,9 @@
 /*Estilos Generales - servicios*/
 .main_services {
     background-color: $blanco--opaco;  
-    align-self: stretch;
+    height: auto;
+    display: flex;
+    justify-content: center;
 }
 .main_services__btn {
     @include boton(2px, $azul--principal);
@@ -91,6 +116,7 @@
     color: #000;
     line-height: 3rem;
     margin: 0;
+    align-self: start;
 }
 .articles h3{
     color: $blanco--opaco;
@@ -103,49 +129,80 @@
 }
 /*Seccion Diseño*/
 .sec_dise {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 49.5% 3.5% 47%;
-    grid-template-rows: 73% 27%;
-    justify-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 11%;
-    grid-template-areas: "texto-dis n img-dis"
-                         "btn-dis n img-dis";
+    max-width: 63.1rem;
+    
+}
+@media (min-width: 768px) {
+    .sec_dise {
+        margin: 0 9%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 49.5% 3.5% 47%;
+        grid-template-rows: 50px 205px 60px;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: "titulo-dise n img-dis"
+                            "texto-dis n img-dis"
+                            "btn-dis n img-dis";
+    }
 }
 .main_services__img-dise {
     grid-area: img-dis;
-    width: 87%;
+    width: 100%;
+}
+.titulo-dise {
+    grid-area: titulo-dise;
 }
 .cont-dise {
     grid-area: texto-dis;
     text-align: center; 
+    margin: 1rem;
 }
 .btn-dise {
     grid-area: btn-dis;
+    margin: 0.5rem auto;
 }
 /*Articulo  Diseñoo*/
 /*Seccion Desarrolloo*/
 .sec_desa {
-    display: grid;
-    grid-template-columns: 48% 5% 47%;
-    grid-template-rows: 216px 80px;
-    justify-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 11%;
-    grid-template-areas: "img-des n texto-des"
-                         "img-des n btn-des";
+    max-width: 63.1rem;
+}
+@media (min-width: 768px) {
+    .sec_desa {
+        display: grid;
+        grid-template-columns: 47% 5% 48%;
+        grid-template-rows: 50px 190px 60px;
+        justify-items: center;
+        align-items: center;
+        margin: 0 5%;
+        grid-template-areas: "img-des n titulo-desa"
+                             "img-des n texto-des"
+                             "img-des n btn-des";
+    }     
 }
 .main_services__img-desa {
     grid-area: img-des;
-    width: 87%;
+    width: 100%;
+}
+.titulo-desa {
+    grid-area: titulo-desa;
 }
 .cont-desa {
     grid-area: texto-des;
     text-align: center;
+    margin: 1rem;
 }
 .btn-desa {
     grid-area: btn-des;
+    margin: 0.5rem auto;
 }
 /*Articulo  Desarrollooo*/
 /*Modif. footer*/
