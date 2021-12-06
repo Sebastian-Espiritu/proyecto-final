@@ -212,9 +212,9 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .fondo__color--servicio { border-bottom: #238fb7 solid 0.9rem; height: 60rem; display: flex; flex-direction: column; align-items: center; }
 
-.encabezado-servicio__titulo { color: #f6f6f6; font-weight: 700; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
+.encabezado-servicio__titulo { color: #f6f6f6; font-weight: 600; font-size: 8.5rem; width: 67.3rem; text-align: center; margin-top: 9rem; }
 
-.encabezado-servicio__texto { font-size: 2.3rem; font-weight: 700; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
+.encabezado-servicio__texto { font-size: 2.3rem; font-weight: 400; color: #f6f6f6; width: 85rem; text-align: center; margin-top: 4.5rem; word-spacing: 0.8rem; }
 
 /*botones - encabezado services*/
 .botones_blue { display: flex; justify-content: space-between; margin-top: 6rem; width: 36%; }
@@ -273,13 +273,17 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .footer__texto--services { margin: 0 0 0.5px 0; font-size: 18.5px; }
 
 /*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
-.encabezado-blog { background-image: url(../img/fondo-blog.jpg); height: 42rem; align-items: center; }
+.encabezado-blog { background-image: url(../img/fondo-blog.jpg); height: auto; align-items: center; background-size: contain; }
 
-.fondo__color--blog { height: 42rem; background-color: rgba(0, 0, 0, 0.6); border-bottom: #238fb7 solid 0.9rem; }
+.fondo__color--blog { height: auto; background-color: rgba(0, 0, 0, 0.6); border-bottom: #238fb7 solid 0.9rem; margin-bottom: 3rem; }
 
-.encabezado__titulo--blog { margin: 0; text-align: center; width: 100%; margin-top: 6.7rem; font-size: 8rem; }
+.encabezado__titulo--blog { margin: 0; text-align: center; width: 100%; margin-top: 6.7rem; font-size: 8rem; font-weight: 600; }
 
-.encabezado-blog__texto { line-height: 1.3; font-size: 2.3rem; font-weight: 600; margin: 6.5rem 7.5rem 0 7.5rem; text-align: start; }
+.encabezado-blog__texto { max-width: 135rem; line-height: 1.3; font-size: 2.5rem; margin: 3.5rem 2rem; display: flex; justify-content: center; text-align: center; }
+
+@media (min-width: 756px) { .encabezado-blog__texto { text-align: start; } }
+
+@media (min-width: 1150px) { .encabezado-blog__texto { margin: 4.5rem auto 3.5rem auto; } }
 
 /*Formulario*/
 /*paginaa formulariioOOOOOOO*/
