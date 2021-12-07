@@ -202,9 +202,9 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 @media (min-width: 768px) { .Int-titulo { font-weight: 700; font-size: 2rem; } }
 
-.Int-texto { max-width: 22rem; color: #001219; margin: 2rem auto; font-weight: 600; text-align: center; font-size: 1.8rem; }
+.Int-texto { max-width: 24rem; color: #001219; margin: 2rem auto; font-weight: 600; text-align: center; font-size: 1.8rem; }
 
-@media (min-width: 768px) { .Int-texto { font-size: 1.5rem; max-width: 18.5rem; } }
+@media (min-width: 768px) { .Int-texto { font-size: 1.5rem; max-width: 22rem; } }
 
 /* ESTILOS generales-de-los-participantes*/
 .participantes { padding: 3rem 2rem; width: 34.5rem; background-color: #f6f6f6; margin: 1.5rem 0; border-radius: 14px; }
@@ -262,12 +262,12 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .articles h3 { color: #f6f6f6; font-size: 2.2rem; text-align: center; }
 
-.articles p { font-size: 1.7rem; text-align: center; }
+.articles p { font-size: 1.7rem; text-align: center; margin: 2.5rem; }
 
 /*Seccion Diseño*/
 .sec_dise { height: auto; display: flex; flex-direction: column; align-items: center; max-width: 63.1rem; }
 
-@media (min-width: 768px) { .sec_dise { margin: 0 9%; height: 100%; display: grid; grid-template-columns: 49.5% 3.5% 47%; grid-template-rows: 50px 205px 60px; justify-items: center; align-items: center; grid-template-areas: "titulo-dise n img-dis" "texto-dis n img-dis" "btn-dis n img-dis"; } }
+@media (min-width: 768px) { .sec_dise { margin: 0 9%; height: 100%; display: grid; grid-template-columns: 51% 2.5% 47%; grid-template-rows: 50px 205px 60px; justify-items: center; align-items: center; grid-template-areas: "titulo-dise n img-dis" "texto-dis n img-dis" "btn-dis n img-dis"; } }
 
 .main_services__img-dise { grid-area: img-dis; width: 100%; }
 

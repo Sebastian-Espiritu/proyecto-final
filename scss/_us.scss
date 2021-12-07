@@ -142,7 +142,7 @@
      }
 }
 .Int-texto {
-    max-width: 22rem;
+    max-width: 24rem;
     color: $azul--oscuro;
     margin: 2rem auto;
     font-weight: 600;
@@ -152,7 +152,7 @@
 @media (min-width: 768px) {
     .Int-texto {
         font-size: 1.5rem;
-        max-width: 18.5rem;
+        max-width: 22rem;
     } 
 }
 

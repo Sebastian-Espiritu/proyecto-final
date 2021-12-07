@@ -126,6 +126,7 @@
 .articles p{
     font-size: 1.7rem;
     text-align: center;
+    margin: 2.5rem;
 }
 /*Seccion Diseño*/
 .sec_dise {
@@ -141,7 +142,7 @@
         margin: 0 9%;
         height: 100%;
         display: grid;
-        grid-template-columns: 49.5% 3.5% 47%;
+        grid-template-columns: 51% 2.5% 47%;
         grid-template-rows: 50px 205px 60px;
         justify-items: center;
         align-items: center;
