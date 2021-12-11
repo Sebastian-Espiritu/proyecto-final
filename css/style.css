@@ -71,7 +71,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .encabezado__titulo { color: #ffffff; font-weight: 700; font-size: 6rem; width: 100%; word-spacing: 0.5rem; margin: 3.9rem 0 0 0; }
 
-.encabezado__texto { font-size: 2rem; line-height: 1.5; width: 100%; padding-bottom: 2rem; margin: 0 1rem; }
+.encabezado__texto { font-size: 2rem; line-height: 1.5; padding-bottom: 2rem; margin: 0 1rem; }
 
 .ubi { display: flex; width: 100%; padding-bottom: 2rem; align-items: flex-end; justify-content: center; }
 
@@ -296,15 +296,15 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .footer__texto--services { margin: 0 0 0.5px 0; font-size: 18.5px; }
 
 /*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
-.encabezado-blog { background-image: url(../img/fondo-blog.jpg); height: auto; align-items: center; background-size: contain; }
+.encabezado-blog { background-image: url(../img/fondo-blog.jpg); max-height: 35rem; align-items: center; background-size: contain; }
 
-.fondo__color--blog { height: auto; background-color: rgba(0, 0, 0, 0.6); border-bottom: #238fb7 solid 0.9rem; margin-bottom: 3rem; }
+.fondo__color--blog { max-height: 35rem; background-color: rgba(0, 0, 0, 0.6); border-bottom: #238fb7 solid 0.9rem; margin-bottom: 3rem; }
 
-.encabezado__titulo--blog { margin: 0; text-align: center; width: 100%; margin-top: 6.7rem; font-size: 8rem; font-weight: 600; }
+.encabezado__titulo--blog { text-align: center; width: 100%; margin-top: 1.5rem; font-size: 7rem; font-weight: 600; }
 
 .encabezado-blog__texto { max-width: 135rem; line-height: 1.3; font-size: 2.5rem; margin: 3.5rem 2rem; display: flex; justify-content: center; text-align: center; }
 
-@media (min-width: 756px) { .encabezado-blog__texto { text-align: start; } }
+@media (min-width: 756px) { .encabezado-blog__texto { text-align: start; margin: 1.5rem 0; } }
 
 @media (min-width: 1150px) { .encabezado-blog__texto { margin: 4.5rem auto 3.5rem auto; } }
 
@@ -335,6 +335,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .btn_enviar:hover { background-color: #0000ff; color: #ffffff; }
 
+/*Paginaaa 404  */
 .body-404 { background-image: linear-gradient(to top, #1a2a30 0%, #001219 100%); background-repeat: no-repeat; background-size: cover; height: 100vh; }
 
 .page-404 { display: flex; justify-content: center; align-items: center; width: 100%; height: calc(100vh - 200px); }
