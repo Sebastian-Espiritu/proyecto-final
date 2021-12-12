@@ -24,9 +24,9 @@ p {
     color: $blanco;
 }
 @mixin boton ($tm, $color){
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 2rem;
     font-weight: 700;
     color: $blanco--opaco;
