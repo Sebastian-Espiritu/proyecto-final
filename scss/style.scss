@@ -57,6 +57,20 @@ p {
     align-items: flex-start;
     padding: 0.8rem 0 0.8rem 4%;
 }
+.disecode {
+    background-image: url(../img/gradient-red.png);
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 3.8rem;
+    cursor: pointer;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-image 0.7s;
+}
+.disecode:hover {
+    background-image: url(../img/gradient.png);
+}
 .nav__menu {
     flex-grow: 0;
 }
