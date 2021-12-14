@@ -36,11 +36,23 @@ p { color: #ffffff; }
 
 @media (min-width: 992px) { .nav { display: flex; flex-direction: row; height: 5.6rem; justify-content: space-between; padding: 0 2rem; align-items: center; } }
 
-.nav__logo { display: flex; justify-content: center; align-items: flex-start; padding: 0.8rem 0 0.8rem 4%; }
+.nav__logo { display: flex; align-items: center; padding-left: 1.5rem; font-family: "Comfortaa"; font-size: 3.8rem; }
 
-.disecode { background-image: url(../img/gradient-red.png); font-family: Comfortaa; font-weight: 700; font-size: 3.8rem; cursor: pointer; color: transparent; -webkit-background-clip: text; background-clip: text; transition: background-image 0.7s; }
+.disecode-red { color: transparent; -webkit-background-clip: text; background-clip: text; transition: background-image 0.7s; font-weight: 700; background-image: url(../img/gradient-red.png); }
 
-.disecode:hover { background-image: url(../img/gradient.png); }
+.disecode-red:hover { background-image: url(../img/gradient-blue.png); }
+
+.disecode-blue { color: transparent; -webkit-background-clip: text; background-clip: text; transition: background-image 0.7s; font-weight: 700; background-image: url(../img/gradient-blue.png); }
+
+.disecode-blue:hover { background-image: url(../img/gradient-red.png); }
+
+.d-red { color: #a60d0d; transition: color 1s; font-weight: 500; }
+
+.d-red:hover { color: #1b80a1; }
+
+.d-blue { color: #1b80a1; transition: color 1s; font-weight: 500; }
+
+.d-blue:hover { color: #a60d0d; }
 
 .nav__menu { flex-grow: 0; }
 
