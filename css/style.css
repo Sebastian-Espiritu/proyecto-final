@@ -81,11 +81,17 @@ a.boton_blue { border-bottom-color: #238fb7; }
 @media (min-width: 576px) { .btn_contac { margin-top: 0.5rem; font-size: 16.5px; } }
 
 /*HEADER  ===00===00==== ===00===→→→→→→→→→→ PAGINAAA INDEEEEXXX ================= ============ HSABFCIA IABDIQA IUBAI8D */
-.encabezado { background-image: url(../img/fondo_index.jpg); background-position: right; background-repeat: no-repeat; background-size: cover; padding: 0; display: flex; flex-direction: column; align-items: flex-start; height: 56.9rem; }
+.encabezado { background-image: url(../img/fondo_index.jpg); background-position: right; background-repeat: no-repeat; background-size: cover; padding: 0; display: flex; flex-direction: column; align-items: flex-start; height: auto; }
 
-.fondo__color { background-color: rgba(0, 0, 0, 0.7); border-bottom: #CC1010 solid 0.9rem; height: 56.9rem; width: 100%; }
+@media (min-width: 414px) { .encabezado { height: 56.9rem; } }
+
+.fondo__color { background-color: rgba(0, 0, 0, 0.7); border-bottom: #CC1010 solid 0.9rem; height: auto; width: 100%; }
+
+@media (min-width: 414px) { .fondo__color { height: 56.9rem; } }
 
 .encabezado__titulo { color: #ffffff; font-weight: 700; font-size: 6rem; width: 100%; word-spacing: 0.5rem; margin: 3.9rem 0 0 0; }
+
+@media (min-width: 576px) { .encabezado__titulo { font-size: 5.7rem; } }
 
 .encabezado__texto { font-size: 2rem; line-height: 1.5; padding-bottom: 2rem; margin: 0 1rem; }
 
@@ -96,7 +102,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
   .ubi { width: 29rem; padding-left: 12.6%; padding-bottom: 3rem; } }
 
 /*botones - encabezado index*/
-.botones_red { display: flex; width: 100%; justify-content: space-evenly; }
+.botones_red { display: flex; width: 100%; justify-content: space-evenly; margin-bottom: 2.5rem; }
 
 @media (min-width: 576px) { .botones_red { width: 40.38rem; margin-left: 11.8%; } }
 
@@ -113,7 +119,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 @media (min-width: 768px) { .servicios { display: grid; grid-template-columns: repeat(2, 50%); justify-items: center; } }
 
-.servicio { background-color: #fff; display: flex; flex-direction: column; align-items: center; width: 34rem; margin: 2rem 5rem; border-radius: 40px; padding: 1rem 2rem; }
+.servicio { background-color: #fff; display: flex; flex-direction: column; align-items: center; width: 34rem; margin: 2rem 0; border-radius: 40px; padding: 1rem 2rem; }
 
 @media (min-width: 576px) { .servicio { width: 88%; margin: 2rem 0; display: grid; justify-items: center; grid-template-columns: repeat(2, 1fr); grid-template-rows: 29px 200px 50px; grid-template-areas: "titulo titulo" "diseño texto" "diseno boton"; }
   .ser-diseño { grid-area: boton; }
@@ -135,14 +141,20 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .servicio__botones:hover { background-color: #238fb7; color: #F6F6F6; }
 
 /*SECCION de blog  ========= =========0000000000000======= ==============*/
-.sec_blog { background-color: #ffffff; padding: 2rem; margin-top: 4rem; }
+.sec_blog { display: flex; flex-direction: column; align-items: center; background-color: #ffffff; margin-top: 4rem; }
 
-.sec_blog--titulo { color: #001219; text-align: center; margin-bottom: 1rem; }
+@media (min-width: 576px) { .sec_blog { padding: 2rem; align-items: start; } }
+
+.sec_blog--titulo { color: #001219; width: 100%; text-align: center; margin: 1rem 0; }
 
 /*boton de sec-Blog*/
-.cont_blog { background-color: #f6f6f6; display: inline-flex; flex-direction: column; margin-left: 30px; width: 34rem; transition: all 300ms; border: 1px solid #464646; border-radius: 18px; cursor: pointer; height: 23rem; }
+.cont_blog { margin-bottom: 3rem; background-color: #f6f6f6; display: inline-flex; flex-direction: column; width: 34rem; transition: all 300ms; border: 1px solid #464646; border-radius: 18px; cursor: pointer; height: 23rem; }
 
-.cont_blog:hover { transform: scale(1.09); }
+@media (min-width: 576px) { .cont_blog { margin-left: 30px; } }
+
+.cont_blog:hover { transform: none; }
+
+@media (min-width: 414px) { .cont_blog:hover { transform: scale(1.09); } }
 
 .cont_blog--img { width: 100%; border-top-left-radius: 18px; border-top-right-radius: 18px; }
 
