@@ -208,6 +208,12 @@
 /*Articulo  Desarrollooo*/
 /*Modif. footer*/
 .footer__texto--services {
-    margin: 0 0 0.5px 0;
-    font-size: 18.5px;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+@media (min-width: 640px) {
+    .footer__texto--services {
+        font-size: 1.85rem;
+        margin-bottom: 0.5px;
+    }
 }
