@@ -242,9 +242,16 @@ a.boton_blue {
 /*botones - encabezado index*/
 .botones_red {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-bottom: 2.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+@media (min-width: 470px) {
+    .botones_red {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 2.5rem; 
+    }
 }
 @media (min-width: 576px) {
     .botones_red {
@@ -254,13 +261,20 @@ a.boton_blue {
 }
 .btn_red {
     @include boton(4px, $rojo--claro);
-    width: 15.35rem;
+    width: 75%;
     height: 5rem;
     padding: 2px 0;
+    margin-bottom: 2rem;
 }
 .btn_red:hover {
     background-color: $rojo--claro;
     color: $blanco;
+}
+@media (min-width: 470px) {
+    .btn_red {
+        width: 15.35rem;
+        margin: 0;    
+    }
 }
 
 /*Mis Servicios=============000=======================0000000======*/
