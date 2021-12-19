@@ -337,9 +337,13 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 @media (min-width: 992px) { .main_services__texto { padding: 2rem 6rem; } }
 
-.articles h3 { color: #f6f6f6; font-size: 2.2rem; text-align: center; }
+.articles__titulo { border-bottom: 2px solid #238fb7; color: #f6f6f6; font-size: 2.2rem; text-align: center; }
 
-.articles p { font-size: 1.7rem; text-align: center; margin: 2.5rem; }
+.articles__texto { margin: 2.5rem 6rem; font-size: 1.7rem; text-align: center; }
+
+@media (min-width: 667px) { .articles__texto { margin: 1rem 4.5rem; } }
+
+@media (min-width: 992px) { .articles__texto { margin: 1rem 1.9rem; } }
 
 /*Seccion Diseño*/
 .sec_dise { height: auto; display: flex; flex-direction: column; align-items: center; min-width: 35.5rem; max-width: 63.1rem; }
@@ -357,6 +361,36 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .btn-dise { grid-area: btn-dis; }
 
 /*Articulo  Diseñoo*/
+.art_dise { display: flex; flex-direction: column; justify-content: center; }
+
+@media (min-width: 576px) { .art_dise { height: 31rem; } }
+
+@media (min-width: 992px) { .art_dise { margin: 0 2%; display: grid; grid-template-columns: 57% 1% 42%; grid-template-rows: 5rem 12.2rem 13.8rem; grid-template-areas: "title l ig" "text l ig" "lista l ig"; }
+  .art_dise__titulo { grid-area: title; }
+  .art_dise__texto { grid-area: text; }
+  .articles-lista { grid-area: lista; }
+  .art_dise__img { grid-area: ig; } }
+
+.art_dise__titulo { display: inline; margin: 2.5rem auto 0 auto; width: 80%; }
+
+@media (min-width: 992px) { .art_dise__titulo { width: 100%; align-self: end; } }
+
+.articles-lista { display: none; }
+
+@media (min-width: 667px) { .articles-lista { display: flex; flex-direction: column; align-items: center; margin-top: 2rem; } }
+
+@media (min-width: 992px) { .articles-lista { margin: 0 0 0 5.5rem; align-items: inherit; } }
+
+.articles-lista__titulo { margin-bottom: 0.5rem; }
+
+.articles-lista__op { word-spacing: 2px; color: #ffffff; font-size: 1.5rem; padding-right: 1rem; }
+
+@media (min-width: 992px) { .articles-lista__op { margin-left: 3rem; } }
+
+.art_dise__img { display: none; }
+
+@media (min-width: 992px) { .art_dise__img { display: block; justify-self: end; align-self: center; width: 42rem; } }
+
 /*Seccion Desarrolloo*/
 .sec_desa { height: auto; display: flex; flex-direction: column; align-items: center; min-width: 35.5rem; max-width: 63.1rem; }
 
