@@ -405,6 +405,18 @@ a.boton_blue { border-bottom-color: #238fb7; }
 .btn-desa { grid-area: btn-des; }
 
 /*Articulo  Desarrollooo*/
+.art_desa { display: flex; flex-direction: column; justify-content: center; }
+
+@media (min-width: 576px) { .art_desa { height: 27rem; } }
+
+@media (min-width: 992px) { .art_desa { margin: 0 2%; display: grid; grid-template-columns: 42% 1% 57%; grid-template-rows: 4.35rem 10.64rem 12.01rem; grid-template-areas: "ig-d l title-d" "ig-d l text-d" "ig-d l cosa"; }
+  .art_desa__titulo { grid-area: title-d; }
+  .art_desa__texto { grid-area: text-d; }
+  .algunacosa { grid-area: cosa; }
+  .art_desa__img { grid-area: ig-d; } }
+
+.art_desa__img { height: 27rem; }
+
 /*Modif. footer*/
 .footer__texto--services { margin-bottom: 1.5rem; font-size: 2rem; }
 
