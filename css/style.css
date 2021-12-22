@@ -172,7 +172,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .cont_blog__img { width: 100%; border-top-left-radius: 18px; border-top-right-radius: 18px; }
 
-.cont_blog__btn { text-decoration: none; width: 11.5rem; height: 2.4rem; font-weight: 600; align-items: center; display: flex; justify-content: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 0px solid #cc1010; background-color: #FF0000; font-size: 1.3rem; margin: 0.75rem 0 0.7rem 3rem; }
+.cont_blog__btn { align-items: center; display: flex; justify-content: center; font-size: 2rem; font-weight: 700; color: #f6f6f6; border-radius: 13px; transition: background-color .5s , color .5s; background-color: transparent; text-decoration: none; border: 0px solid #cc1010; border-radius: 5px; text-decoration: none; width: 11.5rem; padding: 0.3rem 0; font-weight: 600; background-color: #FF0000; font-size: 1.3rem; margin: 0.75rem 0 0.5rem 3rem; }
 
 .cont_blog__btn:hover { color: #f6f6f6; }
 
@@ -451,6 +451,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 @media (min-width: 1150px) { .encabezado-blog__texto { margin: 4.5rem auto 3.5rem auto; } }
 
+/*ESTILOOO-ARTICULOOSSS*/
 /*Formulario*/
 /*paginaa formulariioOOOOOOO*/
 .form__fieldset { border: none; display: flex; flex-direction: column; align-items: center; }

@@ -458,14 +458,15 @@ a.boton_blue {
     border-top-right-radius: 18px;
 }
 .cont_blog__btn {
+    @include boton(0px, $rojo--opaco);
+    border-radius: 5px;
     text-decoration: none;
     width: 11.5rem;
-    height: 2.4rem;
+    padding: 0.3rem 0;
     font-weight: 600;
-    @include boton(0px, $rojo--opaco);
     background-color: $rojo--claro;
     font-size: 1.3rem;
-    margin: 0.75rem 0 0.7rem 3rem;
+    margin: 0.75rem 0 0.5rem 3rem;
 }
 .cont_blog__btn:hover {
     color: $blanco--opaco;
