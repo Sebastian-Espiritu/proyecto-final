@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 3.5rem;
+    align-items: center;
 } 
 .conten__name {
     color: #f6f6f6;
@@ -28,6 +29,7 @@
     text-align: center;
 }
 .conten__input {
+    width: 85%;
     background-color: $azul--oscuro;
     padding: 0.7rem;
     border-radius: 5px;
@@ -36,13 +38,25 @@
     border: 1px solid $azul--btn;
     color: $blanco--opaco;
 }
+@media (min-width: 576px) {
+    .conten__input {
+        width: 40rem;
+    }
+}
 .conten__input--18 {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
+    width: auto;
 }
 .conten__input--area {
     height: 22rem;
-    width: 100%;
+    width: 80%;
     resize: none;
+    margin: 3.5rem auto 0 auto;
+}
+@media (min-width: 576px) {
+    .conten__input--area {
+        width: 100%;
+    }
 }
 /*botones de Contacto*/
 .form__botones {
