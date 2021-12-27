@@ -452,7 +452,6 @@ a.boton_blue {
         margin-left: 30px;
     }
 }
-
 .cont_blog__img {
     width: 100%;
     border-top-left-radius: 18px;
@@ -486,6 +485,18 @@ a.boton_blue {
 }
 .cont_blog__btn--azul {
     background-color: $azul--principal;
+}
+/*Atajo para IR al blooogg*/
+.atajo-bg {
+    align-self: end;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.atajo-bg__btn {
+    font-family: "Comfortaa";
+    font-size: 2rem;
+    color: $azul--oscuro;
+    text-decoration: none;
 }
 /*SECCION DE Contacto*/
 .sec_contac__titulo {

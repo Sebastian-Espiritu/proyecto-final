@@ -182,6 +182,11 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 .cont_blog__btn--azul { background-color: #238fb7; }
 
+/*Atajo para IR al blooogg*/
+.atajo-bg { align-self: end; margin-right: 2rem; cursor: pointer; }
+
+.atajo-bg__btn { font-family: "Comfortaa"; font-size: 2rem; color: #001219; text-decoration: none; }
+
 /*SECCION DE Contacto*/
 .sec_contac__titulo { color: #f6f6f6; padding-bottom: 0.5rem; border-bottom: 2px solid #FF0000; }
 
@@ -439,7 +444,7 @@ a.boton_blue { border-bottom-color: #238fb7; }
 @media (min-width: 640px) { .footer__texto--services { font-size: 1.85rem; margin-bottom: 0.5px; } }
 
 /*HEADER    ====0000===000==  →→→→→→→======PAGINA----BLOOG====*/
-.encabezado-blog { height: auto; background-image: url(../img/fondo-blog.jpg); align-items: center; background-position: left; background-repeat: no-repeat; background-size: cover; }
+.encabezado-blog { height: auto; background-image: url(../img/fondo-blog.jpg); align-items: center; background-position: left top; background-repeat: no-repeat; background-size: cover; }
 
 .fondo__color--blog { background-color: rgba(0, 0, 0, 0.6); margin-bottom: 3rem; border-bottom: #238fb7 solid 0.9rem; }
 
@@ -449,13 +454,55 @@ a.boton_blue { border-bottom-color: #238fb7; }
 
 @media (min-width: 1150px) { .encabezado-blog__texto { text-align: start; padding: 4.5rem auto 3.5rem auto; } }
 
-/*ESTILOOO-ARTICULOOSSS*/
+/*ESTRUCTURAAA-ARTICULOOSSS*/
 .contenidos { display: flex; justify-content: center; margin-top: 2.5rem; }
 
 @media (min-width: 1100px) { .contenidos { height: auto; display: grid; justify-items: end; grid-template-columns: 33.3% 33.4% 33.3%; } }
 
+/*Blogg--- Post--numero--1*/
 /*HEADERRR ---- BLOGG--N01*/
-.aside-bg { font-family: "comfortaa"; background-color: #f6f6f6; border: 5px solid #238fb7; border-radius: 10px; padding: 25px; margin-bottom: 1em; width: 30rem; display: table; font-size: 1.5rem; }
+.head-bg-n1 { display: flex; flex-direction: column; align-items: center; background-image: url(../img/fondo-art-n1.png); background-repeat: no-repeat; background-size: cover; width: 90%; min-height: 25rem; margin: 0 5%; border-radius: 18px; }
+
+.btn-bg-n1 { font-size: 1.6rem; padding: 0.9rem 0; width: 13rem; margin: 3rem 0 0.5rem 0; }
+
+.head-bg-n1__titulo { text-align: center; background-color: rgba(0, 0, 0, 0.85); border-radius: 5px; padding: 3px 1rem; font-family: "Comfortaa"; max-width: 80rem; color: #0000ff; font-weight: 700; font-size: 3.5rem; margin: 1rem 0 0 0; }
+
+@media (min-width: 720px) { .head-bg-n1__titulo { margin-top: 2.5rem; font-size: 4rem; } }
+
+/*Estructuraa del pooosstt*/
+.conten-bg-n1 { display: flex; flex-direction: column; align-items: center; }
+
+@media (min-width: 768px) { .conten-bg-n1 { align-items: inherit; display: grid; justify-items: center; grid-template-columns: 50% 50%; grid-template-areas: "bg-intro aside" "bg-conten aside"; margin: 2.5rem 5% 0 5%; }
+  .bg-intro { grid-area: bg-intro; }
+  .bg-conten { grid-area: bg-conten; }
+  .aside { grid-area: aside; } }
+
+/*Estilosss de los parrafosss*/
+.parrafo-bg-n1 { font-family: "Comfortaa"; font-size: 1.8rem; text-align: center; margin: 2.5rem 10% 4rem 10%; }
+
+@media (min-width: 768px) { .parrafo-bg-n1 { text-align: left; margin-top: 0; } }
+
+.parrafo-bg-titulo { font-size: 2.5rem; color: #ffffff; font-weight: 600; text-align: left; }
+
+/*EL ASIDEEE*/
+.aside-bg { font-family: "comfortaa"; background-color: #f6f6f6; border: 5px solid #238fb7; border-radius: 10px; padding: 2.5rem; margin-bottom: 2em; width: 32rem; font-size: 1.5rem; line-height: 4.7rem; position: inherit; }
+
+@media (min-width: 768px) { .aside-bg { margin-bottom: 4.5rem; position: sticky; top: 3rem; left: 5rem; } }
+
+.aside-bg__titulo { color: #238fb7; font-size: 2rem; }
+
+.aside-bg__btn { font-size: 2rem; text-decoration: none; }
+
+/*Elementosss del pie de páginaaa*/
+.span-bg { display: block; margin: 0 auto; width: 90%; height: 2px; background-color: #464646; }
+
+.boton-foot { display: flex; margin: 0 5%; width: 95%; align-items: center; }
+
+.atajo-bg-volver { color: #ffffff; font-size: 3rem; margin-left: 2rem; }
+
+.btn-bg-releer { font-family: "Comfortaa"; color: #001219; width: 16rem; font-size: 2rem; margin-left: 4.5%; }
+
+.btn-bg-releer:hover { color: #ffffff; }
 
 /*Formulario*/
 /*paginaa formulariioOOOOOOO*/

@@ -54,43 +54,83 @@
         </div>
     </nav>
     <header class="head-bg-n1">
-
+        <p class="cont_blog__btn cont_blog__btn--azul btn-bg-n1">Diseño Web</p>
+        <h1 class="head-bg-n1__titulo">¿ El front-end debe hacerlo una sola persona ?: Los roles en el front-end</h1>
     </header>
 
-    <div>
-        <div>
-
-        </div>
-
-        <aside class="aside-bg"">
-            <p class="toc_title">Contenidos del Post 
-                <span class="toc_toggle">[<a href="#">Ocultar</a>]</span>
-            </p>
-            <ol class="toc_list">
-                <li>
-                    <a href="#Plugins-de-seguridad-para-WordPress">Introducción</a>             
-                </li>
-                <li>
-                    <a href="#Plugins-de-optimizacion-y-velocidad-de-carga">Los roles del front-end</a>
-                    <ul>
-                        <li><a href="#5-Lazy-Load">UI Developer / Diseñador UI</a></li>
-                        <li><a href="#6-WP-Smush">Web Designer / Maquetador</a></li>
-                        <li><a href="#7-WP-SuperCache">Programador Front-end</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#Plugins-de-seguridad-para-WordPress">Resumen</a>
-                </li>    
-            </ol>
+    <div class="conten-bg-n1">
+        <p class="parrafo-bg-n1 bg-intro" id="intro">Antes, era común que una sola persona (bajo el título de Web Master) se encargará de desarrollar 
+        enteramente una página web, sin embargo, con la llegada del lenguaje HTML5 los navegadores obtuvieron la 
+        posibilidad de ejecutar aplicaciones web y con ello, la división del desarrollo web en 2 partes: Front-end 
+        y Back-end.</p>
+        
+        <aside class="aside">
+            <div class="aside-bg">
+                <div>
+                    <p class="aside-bg__titulo">Contenidos del Post</p> 
+                    <a class="aside-bg__btn" data-bs-toggle="collapse" href="#lista" role="button" aria-expanded="false" aria-controls="lista">[ Mostrar/Ocultar ]</a>
+                </div>
+                <ol class="collapse multi-collapse" id="lista">
+                    <li>
+                        <a href="#intro">Introducción</a>             
+                    </li>
+                    <li>
+                        <a href="#roles">Los roles del front-end</a>
+                        <ul>
+                            <li><a href="#dise">UI Developer / Diseñador UI</a></li>
+                            <li><a href="#maquet">Web Designer / Maquetador</a></li>
+                            <li><a href="#pro">Programador Front-end</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#resumen">Resumen</a>
+                    </li>    
+                </ol>
+            </div>
         </aside>
-
-        <p></p>
-        <p></p>
-        <p>Para finalizar, estos roles van a depender de una organización, del presupuesto, y de otras cosas, ya que 
-        pueden llegar a superponerse unos a otros, pero no es recomendable que una sola persona se encargue de todo el 
-        trabajo, no en estos tiempos y menos si se quiere tener un sitio web bien estructurado y optimizado. Puede llegar
-        a suceder que, un Back-end Developer sea a la vez el Web Designer del sitio, pero que un UI Developer sea el 
-        Programador Front-end al mismo tiempo no es para nada viable, no a nuestro parecer.</p>
+        <div class="bg-conten">
+            <h2 class="parrafo-bg-n1 parrafo-bg-titulo" id="roles">¿Cuáles son los Roles del desarrollo Front-end?</h2>
+            <p class="parrafo-bg-n1">A continuación, te vamos a explicar de forma sencilla los roles de los programadores Front-end, que usualmente 
+            se dividen en UI Developer/Diseñador UI, Web Designer/Maquetador y Front-end Developer/Programador Front-end, aunque 
+            también se pueden llegar a dividirse en más o ramificarse para dar lugar a una especialidad. <br> Estos son 
+            los que podrían considerarse como los roles generales:</p>
+            <ul>
+                <li class="parrafo-bg-n1 parrafo-bg-titulo" id="dise">UI Developer / Diseñador UI</li>
+            </ul>
+            <p class="parrafo-bg-n1">En este trabajo no se escribe nada de código, más bien todo se lleva a cabo en programas como Sketch, 
+            Figma o Adobe XD. Sin embargo, aunque todo sea diseño, esto no significa que cualquier diseñador gráfico 
+            pueda hacerse con el trabajo, ya que, por ejemplo, se necesita experiencia en la interacción del usuario con 
+            la página y se debe cuidar el buen funcionamiento de los flujos de cada proceso.</p>
+            <ul>
+                <li class="parrafo-bg-n1 parrafo-bg-titulo" id="maquet">Web Designer / Maquetador</li>
+            </ul>
+            <p class="parrafo-bg-n1">El trabajo del Web Designer es llevar las pantallas diseñadas por el UI Developer a 
+            código HTML y CSS, el cual se ejecuta al cargar la página web. Tener un buen código de HTML nos ayuda para la 
+            usabilidad y el marcado del sitio, además también mejora el posicionamiento de la página en los motores de búsqueda 
+            como Google o Bing, mientras que una buena sintaxis escrita en CSS está directamente relacionada con el rendimiento 
+            del sitio web y de las aplicaciones, por ello se necesita un amplio conocimiento de estos dos lenguajes.</p>
+            <ul>
+                <li class="parrafo-bg-n1 parrafo-bg-titulo" id="pro">Front-end Developer / Programador Front-end</li>
+            </ul>
+            <p class="parrafo-bg-n1">Para este rol la programación se realiza casi enteramente en JavaScript, por lo que su conocimiento a 
+            profundidad es obligatorio, para ser más exactos, no es que se escriba código en JavaScript plano, sino que se utilizan 
+            diversas bibliotecas o frameworks de este lenguaje. En este punto es importante saber que los Front-end Developers se 
+            encargan de agregar la lógica al sitio web, ¿a qué nos referimos con esto? A que ellos o ellas implementan las API provenientes 
+            del Back-end o de algún otro servidor externo, las imprime en pantalla y les agrega validaciones para que puedan funcionar. 
+            En pocas palabras, se encarga de darle vida al sitio web internamente, por lo tanto, no debería de preocuparse por el diseño 
+            de pantalla, el tamaño o color de los botones de los sitios web, ya que de esto se encarga enteramente el UI Developer.</p>
+            
+            <p class="parrafo-bg-n1 mt-5" id="resumen">Para finalizar, estos roles van a depender de una organización, del presupuesto, y de otras cosas, ya que 
+            pueden llegar a superponerse unos a otros, pero no es recomendable que una sola persona se encargue de todo el 
+            trabajo, no en estos tiempos y menos si se quiere tener un sitio web bien estructurado y optimizado. Puede llegar
+            a suceder que, un Back-end Developer sea a la vez el Web Designer del sitio, pero que un UI Developer sea el 
+            Programador Front-end al mismo tiempo no es para nada viable, no a nuestro parecer.</p>
+        </div>
+    </div>
+    <span class="span-bg"></span>
+    <div class="boton-foot">
+        <a href="../pages/blog.html" class="atajo-bg__btn atajo-bg-volver">🠔 Volver</a>
+        <a class="main_services__btn btn-bg-releer" href="#intro">Releer ↑</a>
     </div>
     <footer class="footer">
         <p class="tm_20 footer__titulo">SIGUENOS EN LAS REDES SOCIALES</p>
